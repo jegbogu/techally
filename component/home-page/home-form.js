@@ -68,7 +68,7 @@ setShow(!show)
             use: enteredUse,
             company: enteredCompany,
             companyName: enteredCompanyName,
-            message: enteredMessage,
+             
             check: enteredCheck
         }
         //sending API call

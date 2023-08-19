@@ -1,5 +1,7 @@
-import { Schema, model, models } from 'mongoose'
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+
+const { Schema } = mongoose;
+mongoose.Promise = global.Promise;
 
 const recipientSchema = new Schema({
   startDate: {
@@ -41,4 +43,7 @@ const recipientSchema = new Schema({
   userID: [{ type: Schema.Types.ObjectId, ref: 'Users' }]
 })
 
-module.exports = models.Recipients || mongoose.model('Recipients', recipientSchema)
+module.exports =mongoose.models.Recipients || mongoose.model('Recipients', recipientSchema)
+ 
+
+ 

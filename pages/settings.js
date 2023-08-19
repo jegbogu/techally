@@ -127,6 +127,94 @@ useEffect(()=>{
     }
    
 },[])
+//  //  setting the value of the five user  
+useEffect(()=>{
+    if(props.foundUsersArray.length>5){
+    setTimeout(() => {
+        SetFullname(props.foundUsersArray[5].fullname)
+        SetUserCompany(props.foundUsersArray[5].userCompany)
+        SetUserEmail(props.foundUsersArray[5].userEmail)
+        SetUsername(props.foundUsersArray[5].username)
+        SetPhone(props.foundUsersArray[5].phone)
+        SetMtext(props.foundUsersArray[5].mtext)
+    }, 100000);
+}
+},[])
+//submit the form for the fifth user
+useEffect(()=>{
+    if(props.foundUsersArray.length>5){
+        setTimeout(() => {
+            submitHandler()
+        }, 120000);
+    }
+   
+},[])
+//  //  setting the value of the sixth user  
+useEffect(()=>{
+    if(props.foundUsersArray.length>6){
+    setTimeout(() => {
+        SetFullname(props.foundUsersArray[6].fullname)
+        SetUserCompany(props.foundUsersArray[6].userCompany)
+        SetUserEmail(props.foundUsersArray[6].userEmail)
+        SetUsername(props.foundUsersArray[6].username)
+        SetPhone(props.foundUsersArray[6].phone)
+        SetMtext(props.foundUsersArray[6].mtext)
+    }, 140000);
+}
+},[])
+//submit the form for the sixth user
+useEffect(()=>{
+    if(props.foundUsersArray.length>6){
+        setTimeout(() => {
+            submitHandler()
+        }, 160000);
+    }
+   
+},[])
+//  //  setting the value of the seventh user  
+useEffect(()=>{
+    if(props.foundUsersArray.length>7){
+    setTimeout(() => {
+        SetFullname(props.foundUsersArray[7].fullname)
+        SetUserCompany(props.foundUsersArray[7].userCompany)
+        SetUserEmail(props.foundUsersArray[7].userEmail)
+        SetUsername(props.foundUsersArray[7].username)
+        SetPhone(props.foundUsersArray[7].phone)
+        SetMtext(props.foundUsersArray[7].mtext)
+    }, 180000);
+}
+},[])
+//submit the form for the sixth user
+useEffect(()=>{
+    if(props.foundUsersArray.length>7){
+        setTimeout(() => {
+            submitHandler()
+        }, 200000);
+    }
+   
+},[])
+//  //  setting the value of the eighth user  
+useEffect(()=>{
+    if(props.foundUsersArray.length>8){
+    setTimeout(() => {
+        SetFullname(props.foundUsersArray[8].fullname)
+        SetUserCompany(props.foundUsersArray[8].userCompany)
+        SetUserEmail(props.foundUsersArray[8].userEmail)
+        SetUsername(props.foundUsersArray[8].username)
+        SetPhone(props.foundUsersArray[8].phone)
+        SetMtext(props.foundUsersArray[8].mtext)
+    }, 220000);
+}
+},[])
+//submit the form for the sixth user
+useEffect(()=>{
+    if(props.foundUsersArray.length>8){
+        setTimeout(() => {
+            submitHandler()
+        }, 240000);
+    }
+   
+},[])
 
 
 

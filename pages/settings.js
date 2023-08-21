@@ -378,7 +378,7 @@ export const getStaticProps = async () => {
             {
                 userEmail: myClient.username,
                 userCompany: myClient.companyName,
-                userMessage: myClient.message
+               
             }
         ]
         function mergeArray(array1, array2) {

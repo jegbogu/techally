@@ -40,6 +40,15 @@ const recipientSchema = new Schema({
     require: true,
     trim: true
   },
+  spaceOne:{
+    type:Number
+},
+space:{
+    type:String
+},
+spaceTwo:{
+    type:String
+},
   userID: [{ type: Schema.Types.ObjectId, ref: 'Users' }]
 })
 

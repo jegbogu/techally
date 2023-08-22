@@ -23,7 +23,7 @@ const birthdaySchema = new Schema({
     minLength: [5, 'email characters must be greater five'],
     toLowerCase: true,
     trim: true,
-    unique: true
+   
   },
   phone: {
     type: Number,
@@ -36,6 +36,15 @@ const birthdaySchema = new Schema({
     require: true,
     trim: true
   },
+  spaceOne:{
+    type:Number
+},
+space:{
+    type:String
+},
+spaceTwo:{
+    type:String
+},
   userID: [{ type: Schema.Types.ObjectId, ref: 'Users' }]
 })
 // const Birthdays = mongoose.model('Birthday', birthdaySchema);

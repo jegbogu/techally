@@ -26,6 +26,9 @@ async function handler(req, res) {
                 use: use,
                 company: company,
                 companyName: companyName,
+                role: 'user',
+                active: true,
+                registeredMember: 0
                
             })
             await doc.save()

@@ -81,8 +81,8 @@ const DashboardForm = () => {
 
         //validation
 
-        if (enteredEmail.length < 15) {
-            setEmailErr('Email Lenght must be greater than Fifteen')
+        if (enteredEmail.length < 10) {
+            setEmailErr('Email Lenght must be greater than Ten')
             return;
         }
 
@@ -90,7 +90,7 @@ const DashboardForm = () => {
         //collection of data
         const data = {
             startDate: enteredStartDate,
-            startTime: enteredTimeInputRef,
+           
             endDate: enteredEndDateInputRef,
             checked:checked,
 
@@ -161,10 +161,7 @@ const DashboardForm = () => {
                     <label htmlFor="startDate">Start Date</label>
                     <input type="date" name="startDate" id="startDate" ref={startDateInputRef} />
                 </div>
-                <div>
-                    <label htmlFor="startTime">Time For Message Delivery</label>
-                    <input type="time" name="startTime" id="startTime" ref={startTimeInputRef} />
-                </div>
+               
                 <div>
                     <label htmlFor="endDate">End Date</label>
                     <input type="date" name="endDate" id="endDate" ref={endDateInputRef} />

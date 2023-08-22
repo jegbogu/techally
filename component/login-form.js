@@ -34,8 +34,8 @@ const LoginForm = () => {
 
         //validation
         setWaitMsg('Hold on for few seconds...')
-        if (enteredEmail.length < 15) {
-            setEmailErr('Email Lenght must be greater than Fifteen')
+        if (enteredEmail.length < 10) {
+            setEmailErr('Email Lenght must be greater than Ten')
             return;
         }
         if (!validPassword.test(enteredPassword)) {

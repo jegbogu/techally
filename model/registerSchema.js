@@ -40,10 +40,28 @@ const regSchema = new Schema({
         trim: true,
         toLowerCase:true,
     },
-    
+    role:{
+        type:String
+    },
+    active:{
+        type:Boolean
+    },
+    spaceOne:{
+        type:Number
+    },
+    space:{
+        type:String
+    },
+    spaceTwo:{
+        type:String
+    },
+    recipients:{
+        type:Array,
+        default:''
+      }
 
-    recipients: [{ type: Schema.Types.ObjectId, ref: 'Recipients' }],
-    birthdays: [{ type: Schema.Types.ObjectId, ref: 'Birthday' }]
+    // recipients: [{ type: Schema.Types.ObjectId, ref: 'Recipients' }],
+    // birthdays: [{ type: Schema.Types.ObjectId, ref: 'Birthday' }]
 })
 
 

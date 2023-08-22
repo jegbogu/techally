@@ -44,8 +44,8 @@ if (status === "authenticated") {
 
         //validation
 
-        if (enteredEmail.length < 15) {
-            setEmailErr('Email Lenght must be greater than Fifteen')
+        if (enteredEmail.length < 10) {
+            setEmailErr('Email Lenght must be greater than Ten')
             return;
         }
         

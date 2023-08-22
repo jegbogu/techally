@@ -37,22 +37,27 @@ async function handler(req, res) {
                 username: username,
                 phone: phone,
                 mtext: mtext,
-                userID: userID
+                userID: userID,
+                
+
             })
             await doc.save()
             const user = await Users.findOne({ _id: userID })
 
-            await user.populate('birthdays')
-            const date = new Date();
-            let currentDay = String(date.getDate()).padStart(2, '0');
+            await user.populate('recipients')
+              Users.findByIdAndUpdate(
+                userID,
+                { "$push": { "recipients": username } },
 
-            let currentMonth = String(date.getMonth() + 1).padStart(2, "0");
+                { "new": true, "upsert": true },
 
-            let currentYear = date.getFullYear();
 
-            // we will display the date as DD-MM-YYYY 
+            ).then(function (err, managerparent) {
+                if (err) throw err;
+                console.log(managerparent);
+            })
 
-            let currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
+            
 
             
            

@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { useContext } from "react";
 import userContext from "../store/userContext";
 import { signIn } from "next-auth/react";
- 
+import Spinner from "./icons/spinner";
+ import classes from '../component/home-page/homeForm.module.css'
 
 
 const LoginForm = () => {
@@ -16,6 +17,8 @@ const LoginForm = () => {
     const [emailErr, setEmailErr] = useState(' ')
     const [password, setPassErr] = useState(' ')
     const [waitMsg, setWaitMsg] = useState(' ')
+    const [spinner, SetSpinner] = useState(false)
+    const [isLoading, setIsLoding] = useState('')
 
     const emailInputRef = useRef()
     const passwordInputRef = useRef()
@@ -33,10 +36,12 @@ const LoginForm = () => {
         const enteredPassword = passwordInputRef.current.value;
 
         //validation
-        setWaitMsg('Hold on for few seconds...')
-        if (enteredEmail.length < 10) {
-            setEmailErr('Email Lenght must be greater than Ten')
+        
+        if (enteredEmail.length < 12) {
+            setEmailErr('Email Lenght must be greater than Twelve')
             return;
+        }else{
+            setEmailErr('')
         }
         if (!validPassword.test(enteredPassword)) {
             setPassErr('Password must contain special character(s), and  uppercase');
@@ -44,9 +49,14 @@ const LoginForm = () => {
         } else {
             setPassErr('Good Password');
         }
+
+        setWaitMsg('Hold on for few seconds...')
+       
+        SetSpinner(<Spinner/>)
         const result  = await signIn("credentials",{
             username: enteredEmail,
             password: enteredPassword,
+            role:'user',
             redirect: true,
             callbackUrl:"/dashboard"
         })
@@ -56,46 +66,45 @@ const LoginForm = () => {
     }
 
     return (
-        <div>
+        <div className={classes.section}>
 
-            <form onSubmit={submitHandler}>
+        <form onSubmit={submitHandler} className={classes.form}>
+            <h3>{isLoading}</h3>
+            <div className={classes.formControl}>
+                <label htmlFor="email">Email</label>
+                <input
+                    type='email'
+                    required id="email"
+                    ref={emailInputRef}
+                    name='username'
+                />
+            </div>
+            <div>
+                
+               <h3>{emailErr}</h3> 
+            </div>
+            <div className={classes.formControl}>
+                <label htmlFor="password">Password</label>
+
+                <input
+                    type={show ? "text" : "password"}
+                    required id="password"
+                    ref={passwordInputRef}
+                    name='password'
+                />
+
+                <span onClick={setFnc}>{show ? "Hide" : "Show"}</span>
                 <div>
-                    <h3>{waitMsg}</h3>
-                    <label htmlFor="email">Email</label>
-                    <input type='email'
-                        required id="email"
-                        name="username"
-                        ref={emailInputRef} />
-
+                  <h3> {password}</h3> 
                 </div>
-                <div>
-                    {emailErr}
-                </div>
-                <div>
-                    <label htmlFor="password">Password</label>
+            </div>
+             
+           
+            <button type="submit">Login  {spinner}</button>
+            <h4 style={{color:'white'}}>You do not have an Account? <Link href='/register' target='_blank'>Register</Link></h4>
+        </form>
 
-                    <input type={show ? "text" : "password"}
-                        required id="password"
-                        name="password"
-                        ref={passwordInputRef} />
-
-                    <span onClick={setFnc}>{show ? "Hide" : "Show"}</span>
-                    <div>
-                        {password}
-                    </div>
-                </div>
-                <div>
-                    <input type='checkbox' id="remember" />
-                    <label htmlFor="remember">Remember Me</label>
-
-                </div>
-
-                <button type="submit">Login</button>
-
-            </form>
-            <button type="button">Forgot Password?</button>
-            <p>You do not have an Account? <Link href='/' target='_blank'>Register</Link></p>
-        </div>
+    </div>
     );
 }
 

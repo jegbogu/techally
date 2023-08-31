@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/react'
+import classes from './account.module.css'
 
 const Account = () => {
     const [show, setShow] = useState(false)
@@ -31,7 +32,7 @@ const Account = () => {
     }
 
     return (
-        <div>
+        <div className={classes.acc}>
             <button onClick={setFnc}>Account</button>
             {show && (<div>
                 <ul>

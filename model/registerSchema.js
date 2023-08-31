@@ -1,64 +1,68 @@
-const mongoose = require('mongoose');
+import {Schema, model,models} from 'mongoose'
+const mongoose = require('mongoose')
 
-const { Schema } = mongoose;
-mongoose.Promise = global.Promise;
+// const { Schema } = mongoose;
+// mongoose.Promise = global.Promise;
 
 const regSchema = new Schema({
     _id: Schema.Types.ObjectId,
-    username:{
+    username: {
         type: String,
         require: true,
-        minLength:[5,'email characters must be greater five'],
-        toLowerCase:true,
+        minLength: [5, 'email characters must be greater five'],
+        toLowerCase: true,
         trim: true,
         unique: true
-      },
-      password:{
+    },
+    password: {
         type: String,
         require: true,
         trim: true
     },
-    use:{
+    use: {
         type: String,
         require: true,
         trim: true
     },
-    company:{
+    company: {
         type: String,
         require: true,
         trim: true
     },
-    company:{
+    company: {
         type: String,
         require: true,
         trim: true
     },
-    companyName:{
+    companyName: {
         type: String,
         require: true,
-        minLength:[5,'company namecharacters must be greater five'],
+        minLength: [5, 'company namecharacters must be greater five'],
         trim: true,
-        toLowerCase:true,
+        toLowerCase: true,
     },
-    role:{
-        type:String
+    role: {
+        type: String
     },
-    active:{
-        type:Boolean
+    active: {
+        type: Boolean
     },
-    spaceOne:{
-        type:Number
+    passport: {
+        type: String
     },
-    space:{
-        type:String
+    spaceOne: {
+        type: String
     },
-    spaceTwo:{
-        type:String
+    space: {
+        type: String
     },
-    recipients:{
-        type:Array,
-        default:''
-      }
+    spaceTwo: {
+        type: String
+    },
+    recipients: {
+        type: Array,
+        default: ''
+    }
 
     // recipients: [{ type: Schema.Types.ObjectId, ref: 'Recipients' }],
     // birthdays: [{ type: Schema.Types.ObjectId, ref: 'Birthday' }]
@@ -69,6 +73,6 @@ const regSchema = new Schema({
 // const Users = models.Users || model('Users',regSchema)
 // export default Users
 
-// module.exports = models.Users|| mongoose.model('Users',regSchema)
-module.exports =
-    mongoose.models.Users || mongoose.model('Users', regSchema);
+module.exports = models.Users|| mongoose.model('Users',regSchema)
+// module.exports =
+//     mongoose.models.Users || mongoose.model('Users', regSchema);

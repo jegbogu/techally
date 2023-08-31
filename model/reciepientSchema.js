@@ -7,9 +7,7 @@ const recipientSchema = new Schema({
   startDate: {
     type: String
   },
-  startTime: {
-    type: String
-  },
+  
   endDate: {
     type: String
   },
@@ -41,7 +39,7 @@ const recipientSchema = new Schema({
     trim: true
   },
   spaceOne:{
-    type:Number
+    type:String
 },
 space:{
     type:String

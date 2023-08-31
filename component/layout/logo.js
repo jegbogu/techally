@@ -1,6 +1,6 @@
 const Logo = () => {
     return ( 
-        <div>Joerally App</div>
+        <div><img src="logoTwo.png" alt="logo" width={150}/></div>
      );
 }
  

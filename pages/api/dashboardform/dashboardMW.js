@@ -9,8 +9,8 @@ import Users from "../../../model/registerSchema"
 async function handler(req, res) {
     if (req.method === 'POST') {
         try {
-            const {startDate,startTime,endDate,checked,fullname, email, phone, mtext, userID } = req.body
-            console.log({startDate,startTime,endDate,checked,fullname, email, phone, mtext, userID })
+            const {startDate,endDate,checked,fullname, email, phone, mtext, userID } = req.body
+            console.log({startDate,endDate,checked,fullname, email, phone, mtext, userID })
 
             console.log('Connecting to Mongo')
             await connectDB()
@@ -19,13 +19,17 @@ async function handler(req, res) {
 
             const doc = new Recipient({
                 startDate:startDate,
-                startTime:startTime,
+              
                 endDate:endDate,
                 checked:checked,
                 fullname: fullname,
                 email: email,
                 phone: phone,
                 mtext: mtext,
+                
+                spaceOne:'none',
+                space:'none',
+                spaceTwo:'none',
                 userID: userID
             })
             await doc.save()
@@ -55,7 +59,18 @@ async function handler(req, res) {
         //   console.log(newRecipientID)
         //   const recipient = Recipient.findOne({_id:newRecipientID})
         
-       
+        Users.findByIdAndUpdate(
+            userID,
+            { "$push": { "recipients": email } },
+
+            { "new": true, "upsert": true },
+
+
+        ).then(function (err, managerparent) {
+            if (err) throw err;
+            console.log(managerparent);
+        })
+
             res.json({ doc })
 
         } catch (error) {

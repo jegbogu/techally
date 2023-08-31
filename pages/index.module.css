@@ -1,0 +1,26 @@
+.sendEmail{
+    display: flex;
+    margin-top: 100px;
+}
+.header{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 100px;
+}
+.faqs h2{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 100px;
+   
+}
+.post{
+    background: linear-gradient(rgb(212, 230, 248),white,white);
+    margin-bottom: 50px;
+  
+}
+.post h2{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 50px;
+}

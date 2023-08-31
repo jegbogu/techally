@@ -39,6 +39,10 @@ async function handler(req, res) {
                 mtext: mtext,
                 userID: userID,
                 
+                spaceOne:'none',
+                space:'none',
+                spaceTwo:'none',
+                
 
             })
             await doc.save()

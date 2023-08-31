@@ -70,7 +70,7 @@ const DashboardForm = () => {
         e.preventDefault()
 
         const enteredStartDate = startDateInputRef.current.value
-        const enteredTimeInputRef = startTimeInputRef.current.value
+        
         const enteredEndDateInputRef = endDateInputRef.current.value
 
         const enteredFullName = FullNameInputRef.current.value

@@ -37,7 +37,7 @@ const birthdaySchema = new Schema({
     trim: true
   },
   spaceOne:{
-    type:Number
+    type:String
 },
 space:{
     type:String

@@ -1,0 +1,27 @@
+.sectionOne{
+    margin-left: 5%;
+    width: 30%;
+    margin-left: 300px;
+    border-top: solid var(--s-col) 10px;
+    border-radius: 10px;
+}
+.section{
+    display: flex;
+}
+.bg{
+    background-color: var(--p-col);
+    padding: 50px;
+}
+.figure img{
+    border-radius: 50%;
+}
+.wemail h3{
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+.wemail p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    margin-top:20px ;
+}

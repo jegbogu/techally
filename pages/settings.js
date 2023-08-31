@@ -15,261 +15,41 @@ function Setting(props) {
     const form = useRef()
     
 
-    const [isTimeToRunFunction, setIsTimeToRunFunction] = useState(false);
+    const allUsers = [...props.foundUsersArray];
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+    
     useEffect(() => {
-        const checkTimeAndRunFunction = () => {
-            const currentTime = new Date();
-            const currentHour = currentTime.getHours();
-            const currentMinutes = currentTime.getMinutes();
-
-            if (currentHour === 14 &&(currentMinutes >= 18 && currentMinutes<=52)) {
-                setIsTimeToRunFunction(true);
-            }
-        };
-
-        const interval = setInterval(checkTimeAndRunFunction, 60000); // Check every minute
-
-        return () => {
-            clearInterval(interval);
-        };
-    }, []);
-    //setting the value of the first user after 5sec
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 0) {
-                setTimeout(() => {
-                    SetFullname(props.foundUsersArray[0].fullname)
-                    SetUserCompany(props.foundUsersArray[0].userCompany)
-                    SetUserEmail(props.foundUsersArray[0].userEmail)
-                    SetUsername(props.foundUsersArray[0].username)
-                    SetPhone(props.foundUsersArray[0].phone)
-                    SetMtext(props.foundUsersArray[0].mtext)
-                    console.log(userEmail)
-                }, 5000);
-            }
+        const currentHour = new Date().getHours();
+        const currentMinute = new Date().getMinutes();
+    
+        // Check if the current time is between 9:00 AM and 9:50 PM (9:00 to 9:50)
+        if (currentHour === 9 && currentMinute >= 0 && currentMinute <= 50) {
+            const intervalId = setInterval(() => {
+                if (currentIndex < allUsers.length) {
+                    SetFullname(allUsers[currentIndex].fullname);
+                    SetUserCompany(allUsers[currentIndex].userCompany);
+                    SetUserEmail(allUsers[currentIndex].userEmail);
+                    SetUsername(allUsers[currentIndex].username);
+                    SetPhone(allUsers[currentIndex].phone);
+                    SetMtext(allUsers[currentIndex].mtext);
+                    setCurrentIndex(currentIndex + 1);
+                    setTimeout(() => {
+                        submitHandler();
+                    }, 30000);
+                }
+            }, 60000); // 60 seconds
+    
+            return () => {
+                clearInterval(intervalId); // Clear the interval when the component unmounts
+            };
+        } else {
+            // If it's not between 5:00 PM and 5:15 PM, do nothing
+            return () => {};
         }
-
-    }, [isTimeToRunFunction])
-
-    //submit the form  for the first person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 0) {
-                setTimeout(() => {
-                    submitHandler()
-                }, 15000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-     
-    //setting the value of the second user
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 1) {
-                setTimeout(() => {
-                    SetFullname(props.foundUsersArray[1].fullname)
-                    SetUserCompany(props.foundUsersArray[1].userCompany)
-                    SetUserEmail(props.foundUsersArray[1].userEmail)
-                    SetUsername(props.foundUsersArray[1].username)
-                    SetPhone(props.foundUsersArray[1].phone)
-                    SetMtext(props.foundUsersArray[1].mtext)
-                    console.log(userEmail)
-                }, 25000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-
-    //submit the for the second person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 1) {
-                setTimeout(() => {
-                    submitHandler()
-                }, 35000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-     
-    //setting the value of the third person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 2) {
-                setTimeout(() => {
-                    SetFullname(props.foundUsersArray[2].fullname)
-                    SetUserCompany(props.foundUsersArray[2].userCompany)
-                    SetUserEmail(props.foundUsersArray[2].userEmail)
-                    SetUsername(props.foundUsersArray[2].username)
-                    SetPhone(props.foundUsersArray[2].phone)
-                    SetMtext(props.foundUsersArray[2].mtext)
-                    console.log(userEmail)
-                }, 45000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-
-    //submit the form  for third person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 2) {
-                setTimeout(() => {
-                    submitHandler()
-                }, 55000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-     
-    //setting the value of the  fourth person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 3) {
-                setTimeout(() => {
-                    SetFullname(props.foundUsersArray[3].fullname)
-                    SetUserCompany(props.foundUsersArray[3].userCompany)
-                    SetUserEmail(props.foundUsersArray[3].userEmail)
-                    SetUsername(props.foundUsersArray[3].username)
-                    SetPhone(props.foundUsersArray[3].phone)
-                    SetMtext(props.foundUsersArray[3].mtext)
-                    console.log(userEmail)
-                }, 65000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-
-    //submit the form  for the fourth person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 3) {
-                setTimeout(() => {
-                    submitHandler()
-                }, 75000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-    //setting the value of the  fifth person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 4) {
-                setTimeout(() => {
-                    SetFullname(props.foundUsersArray[4].fullname)
-                    SetUserCompany(props.foundUsersArray[4].userCompany)
-                    SetUserEmail(props.foundUsersArray[4].userEmail)
-                    SetUsername(props.foundUsersArray[4].username)
-                    SetPhone(props.foundUsersArray[4].phone)
-                    SetMtext(props.foundUsersArray[4].mtext)
-                    console.log(userEmail)
-                }, 85000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-
-    //submit the form  for the fifth person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 4) {
-                setTimeout(() => {
-                    submitHandler()
-                }, 95000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-    //setting the value of the  sixth person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 5) {
-                setTimeout(() => {
-                    SetFullname(props.foundUsersArray[5].fullname)
-                    SetUserCompany(props.foundUsersArray[5].userCompany)
-                    SetUserEmail(props.foundUsersArray[5].userEmail)
-                    SetUsername(props.foundUsersArray[5].username)
-                    SetPhone(props.foundUsersArray[5].phone)
-                    SetMtext(props.foundUsersArray[5].mtext)
-                  
-                }, 105000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-
-    //submit the form  for the sixth  person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 5) {
-                setTimeout(() => {
-                    submitHandler()
-                }, 115000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-    //setting the value of the  seventh person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 6) {
-                setTimeout(() => {
-                    SetFullname(props.foundUsersArray[6].fullname)
-                    SetUserCompany(props.foundUsersArray[6].userCompany)
-                    SetUserEmail(props.foundUsersArray[6].userEmail)
-                    SetUsername(props.foundUsersArray[6].username)
-                    SetPhone(props.foundUsersArray[6].phone)
-                    SetMtext(props.foundUsersArray[6].mtext)
-                 
-                }, 125000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-
-    //submit the form  for the seventh person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 6) {
-                setTimeout(() => {
-                    submitHandler()
-                }, 135000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-    //setting the value of the  eigth person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 7) {
-                setTimeout(() => {
-                    SetFullname(props.foundUsersArray[7].fullname)
-                    SetUserCompany(props.foundUsersArray[7].userCompany)
-                    SetUserEmail(props.foundUsersArray[7].userEmail)
-                    SetUsername(props.foundUsersArray[7].username)
-                    SetPhone(props.foundUsersArray[7].phone)
-                    SetMtext(props.foundUsersArray[7].mtext)
-                 
-                }, 145000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-
-    //submit the form  for the eigth person
-    useEffect(() => {
-        if (isTimeToRunFunction) {
-            if (props.foundUsersArray.length > 7) {
-                setTimeout(() => {
-                    submitHandler()
-                }, 155000);
-            }
-        }
-
-    }, [isTimeToRunFunction])
-     
+    }, [currentIndex]);
+    
+  
 
 
 

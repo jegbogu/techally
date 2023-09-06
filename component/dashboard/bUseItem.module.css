@@ -1,0 +1,44 @@
+.section table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .section table td, .section table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .section table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .section table tr:hover {background-color: #ddd;}
+  
+  .section table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:var(--p-col);
+    color: white;
+  }
+  .register{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    color: var(--s-col);
+    padding-bottom: 20px;
+    border-bottom: solid 10px var(--t-col);
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+.section input{
+    padding: 20px;
+    width: 50%;
+    margin-left: 10%;
+    border-radius: 50px;
+}

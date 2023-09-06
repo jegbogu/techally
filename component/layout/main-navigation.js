@@ -1,8 +1,4 @@
-import DropDown from "../icons/dropdown";
- 
-
-import { useRouter } from "next/router";
-
+ import { useRouter } from "next/router";
 import Hamburger from "./hamburger";
 import classes from './main-navigation.module.css'
 import { signIn, signOut, useSession } from 'next-auth/react'

@@ -28,11 +28,15 @@ const bcrypt = require('bcrypt')
        
         const user = await Users.findOne({username}) 
          console.log(user)
+         if(!user){
+            res.status(403).json({message:'Password or Email is not correct'})
+            return;
+         }
          const validUser = await bcrypt.compare(password, user.password)
          console.log(validUser)
          if(!validUser){
-            res.status(403).json({message:'not a user'})
-          return
+            res.status(403).json({message:'Password or Email is not correct'})
+          return;
          }
          res.status(200).json(user);
         

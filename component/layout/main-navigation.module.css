@@ -6,6 +6,7 @@
     width: 100%;
     padding-bottom: 30px;
     padding-left: 5%;
+    box-shadow: var(--t-col) 1px 2px 3px;
    
   
    
@@ -149,15 +150,15 @@
     background:linear-gradient(45deg,var(--p-col),var(--b-col),var(--s-col)) ; ;
 }
 .proImg li{
-    width: 60px;
+    width: 75px;
      padding: 13px 8px 13px 8px;
-    margin-top: -25px;
+    margin-top: -22px;
     border-radius: 50%;
     
 }
 .proImg img{
     width: 100%;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 .profile .userInit li{
     

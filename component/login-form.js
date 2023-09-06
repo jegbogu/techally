@@ -47,20 +47,51 @@ const LoginForm = () => {
             setPassErr('Password must contain special character(s), and  uppercase');
             return;
         } else {
-            setPassErr('Good Password');
+            setPassErr(' ');
         }
 
         setWaitMsg('Hold on for few seconds...')
        
         SetSpinner(<Spinner/>)
-        const result  = await signIn("credentials",{
-            username: enteredEmail,
-            password: enteredPassword,
-            role:'user',
-            redirect: true,
-            callbackUrl:"/dashboard"
-        })
-        // console.log(result)
+
+        // signIn("credentials", { ...values, redirect: false })
+        // .then(({ ok, error }) => {
+        //     if (ok) {
+        //         router.push("/dashboard");
+        //     } else {
+        //         console.log(error)
+        //         toast("Credentials do not match!", { type: "error" });
+        //     }
+        // })
+
+        const handleSign = async ()=>{
+            try {
+                const result  = await signIn("credentials",{
+                    username: enteredEmail,
+                    password: enteredPassword,
+                    role:'user',
+                    redirect: false,
+                   
+                }) 
+                if(!result.ok){
+                    throw new Error('Invalid Username or Password')
+                }else{
+                    router.push('/dashboard')
+                }
+             
+
+            } catch (error) {
+                
+                setEmailErr(error.message)
+                setIsLoding('')
+                SetSpinner('')
+                setPassErr('')
+                return;
+            }
+        }
+        
+        
+        handleSign()
        
          
     }

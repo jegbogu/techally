@@ -16,6 +16,14 @@ async function handler(req, res) {
             await connectDB()
             console.log('Connected to Mongo')
             console.log('Creating document')
+            // searching if user has already been registerd using email
+         const foundUser =   await Users.findOne({_id:userID})
+         if(foundUser.recipients.includes(email)){
+            console.log('rejected')
+            res.status(403).json({message:'User has already been registered by You'})
+            return
+         }
+        
 
             const doc = new Recipient({
                 startDate:startDate,

@@ -3,6 +3,8 @@ import { useContext, useEffect, useState } from "react";
 import DashboardFormB from "./dashboard-formB";
 import DashboardForm from "./dashboard-form";
 import { useSession } from 'next-auth/react'
+import DashboardBanner from "./dashboardBanner";
+import classes from './dashboard.module.css'
 
 const Dashboard = () => {
     // const { user } = useContext(userContext)
@@ -22,8 +24,7 @@ const Dashboard = () => {
         return (
             <div>
                 <div>
-                    <h3>Dashboard</h3>
-                    <h3>{username}</h3>
+                    <DashboardBanner />
 
                 </div>
                 <div>
@@ -43,15 +44,14 @@ const Dashboard = () => {
 
 
     return (
-        <div>
+        <div className={classes.dashboard}>
             <div>
-                <h3>Dashboard</h3>
-                <h3>{username}</h3>
+                <DashboardBanner />
 
             </div>
             <div>
 
-                <DashboardForm/>
+                <DashboardForm />
             </div>
 
 

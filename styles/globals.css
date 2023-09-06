@@ -1,8 +1,9 @@
 :root {
    
-    --p-col:rgb(24,24,66);
-    --s-col:#D2800C;
+    --p-col:#001C2A;
+    --s-col:#E69956;
     --b-col:#ffffff;
+    --t-col:#61727A;
   
   --max-width: 1100px;
   --border-radius: 12px;

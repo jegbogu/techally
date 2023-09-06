@@ -18,20 +18,30 @@ export const authOptions = {
         password: { label: "Password", type: "password" }
       },
       async authorize(credentials, req) {
-        const { username, password, role } = credentials
-        const response = await fetch('http://localhost:3000/api/login/login-form', {
-          method: 'POST',
-          body: JSON.stringify({ username, password, role}),
-          headers: {
-            'Content-type': 'application/json'
-          },
-
-        });
-        let user = await response.json()
-
-        if (response.ok && user) {
-          return user;
-        } else return null;
+        try {
+          const { username, password, role } = credentials
+          const response = await fetch('http://localhost:3000/api/login/login-form', {
+            method: 'POST',
+            body: JSON.stringify({ username, password, role}),
+            headers: {
+              'Content-type': 'application/json'
+            },
+  
+          });
+          if(!response.ok){
+            throw new Error('Password Or Email is not Correct')
+            
+          }
+          let user = await response.json()
+  
+          if (response.ok && user) {
+            return user;
+          } else return null;
+        } catch (error) {
+          console.log(error.message)
+          return;
+        }
+       
 
       },
     }),

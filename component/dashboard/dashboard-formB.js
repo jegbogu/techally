@@ -2,7 +2,8 @@ import { useRef } from "react";
 import { useState } from "react";
 import { useRouter } from 'next/router';
 import { useSession } from "next-auth/react";
- 
+import classes from './dashboard-form.module.css'
+import Spinner from "../icons/spinner";
 
 
 
@@ -21,6 +22,7 @@ if (status === "authenticated") {
 
     const [count, setCount] = useState(0)
     const [maxMessage, setMaxMessage] = useState('')
+    const [spinner, setSpinner] = useState(false)
     const [isLoading, setIsLoding] = useState('')
     const router = useRouter()
 
@@ -60,7 +62,7 @@ if (status === "authenticated") {
             userID: userID
         }
         //sending API call
-        setIsLoding('Hold on for few seconds...')
+         
         const response = await fetch('api/dashboardform/dashboardB', {
             method: "POST",
             body: JSON.stringify(data),
@@ -74,7 +76,9 @@ if (status === "authenticated") {
             throw new Error(userData.message || 'something went wrong')
         }
 
-            router.reload()
+        setIsLoding('Hold on for few seconds...')
+        setSpinner(<Spinner/>)
+        router.reload()
 
 
 
@@ -108,10 +112,10 @@ if (status === "authenticated") {
     }
 
     return (
-        <div>
+        <div className={classes.form}>
             <h3>{isLoading}</h3>
             <form onSubmit={submitHandler}>
-                <h1>Register a New Recipient for Birthday Messages</h1>
+                <p className={classes.register}>Register a New Recipient for Birthday Messages</p>
                 <div>
                     <label htmlFor="fullname">Recipient FullName</label>
                     <input type='text'
@@ -139,9 +143,10 @@ if (status === "authenticated") {
                         name='username'
                     />
                 </div>
-                <div>
+                <div className={classes.error}>
                     {emailErr}
                 </div>
+
 
                 <div>
                     <label htmlFor="phone">Recipient Phone Number</label>
@@ -177,7 +182,7 @@ if (status === "authenticated") {
                     {maxMessage}
                 </div>
 
-                <button type="submit">Register</button>
+                <button type="submit">Register {spinner}</button>
 
             </form>
 

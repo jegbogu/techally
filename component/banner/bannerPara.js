@@ -5,7 +5,7 @@ import Button from '../button';
 const BannerPara = () => {
     return (
         <div className={classes.bannerParagraph}>
-            <p>You can relax while our system send your birthday messages and weekly emails!</p>
+            <p>You can relax while our system send your birthday messages and weekly <span>emails</span>!</p>
 
             <Button btn={<Link href='/register'>Create Free Account</Link>}/>
         </div>

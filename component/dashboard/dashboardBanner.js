@@ -7,10 +7,12 @@ function DashboardBanner() {
     let username;
     let numberOfRecipients;
     let email;
+    let use
     if (status === "authenticated") {
         username = session.user.companyName
         numberOfRecipients = session.user.recipients
         email =session.user.username
+        use = session.user.use
     } else {
         console.log('not true')
     }
@@ -21,7 +23,7 @@ function DashboardBanner() {
             </div>
             <div className={classes.user}>
                 <h3>{username}</h3>
-
+                <p>({use} Emails)</p>
             </div>
             <div className={classes.card}>
                 <div>

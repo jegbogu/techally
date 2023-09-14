@@ -1,6 +1,12 @@
 import Head from "next/head";
 import { Fragment } from "react";
-
+import SectionOne from "../component/portfolio/sectionOne";
+import Skills from "../component/skills/sectionOne";
+import classes from './portfolio.module.css'
+import Education from "../component/education/education";
+ 
+import Button from "../component/button";
+import Project from "../component/project/project";
 const Portfolio = () => {
     return ( 
         <Fragment>
@@ -9,7 +15,23 @@ const Portfolio = () => {
             <meta name="description" content="My Projects and Details"/>
         </Head>
         <div>
-        <h1>Portfolio</h1>
+       <SectionOne/>
+       <div className={classes.skills}>
+       <h3>Skills</h3>
+       <Skills/>
+       <div className={classes.resume}>
+        <Button   btn={"View Resume"}/>
+       </div>
+       </div>
+       <div className={classes.edu}>
+        <h3>Education</h3>
+        <Education/>
+       </div>
+       <div className={classes.pro}>
+        <h3>Featured Projects</h3>
+        <Project/>
+       </div>
+       
         </div>
     </Fragment>
     );

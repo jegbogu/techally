@@ -23,13 +23,14 @@ const HomePage = (props) => {
           />
         </Head>
         <BannerL />
-        <h2 className={classes.header}>Our Email Services</h2>
+        <div className={classes.sectionR}>
+        <h2 className={classes.header}>Our <span>Email</span> Services</h2>
         <div className={classes.sendEmail}>
 
           <SectionOne />
           <SectionTwo />
         </div>
-
+        </div>
         <div className={classes.faqs}>
           <h2>FAQS</h2>
           <FaqsAll />

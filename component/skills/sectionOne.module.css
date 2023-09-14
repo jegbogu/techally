@@ -1,0 +1,70 @@
+.skills{
+    display: flex;
+    width: 85%;
+    margin-left: 7.5%;
+   padding: 50px;
+    background:linear-gradient(45deg,rgb(250, 245, 245),rgb(250, 245, 245),rgb(250, 245, 245),rgb(226, 240, 244));
+    
+  
+}
+.profile{
+    width: 60%;
+    padding-right: 40px;
+    border-right: solid gray 1px;
+}
+.profile h2{
+    margin-bottom: 20px;
+}
+.profile p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.rate>div{
+     
+    border: solid var(--p-col) 1px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+}
+.fed div{
+    background-color: var(--p-col);
+    width: 89%;
+    padding: 10px;
+}
+.bed div{
+    background-color: var(--p-col);
+    width: 79%;
+    padding: 10px;
+}
+.fed div{
+    background-color: var(--p-col);
+    width: 89%;
+    padding: 10px;
+}
+.dbm div{
+    background-color: var(--p-col);
+    width: 79%;
+    padding: 10px;
+}
+.cad div{
+    background-color: var(--p-col);
+    width: 89%;
+    padding: 10px;
+}
+.ui div{
+    background-color: var(--p-col);
+    width: 49%;
+    padding: 10px;
+}
+.rating{
+    margin-top: 50px;
+    width: 50%;
+   padding-left: 20px;
+}
+.rate p{
+    margin-bottom: 10px;
+}
+.rate span{
+    padding-right: 220px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}

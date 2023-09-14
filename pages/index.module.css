@@ -1,11 +1,23 @@
 .sendEmail{
     display: flex;
     margin-top: 100px;
+    margin-bottom: 100px;
+}
+.sectionR{
+    margin-bottom: 100px;
+    background: url('/stpg.png') right 300px bottom 10px;
+    background-attachment: fixed;
+    background-size: 1500px;
+}
+.sectionR span{
+    color: var(--s-col);
 }
 .header{
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
-    margin-top: 100px;
+    padding-top: 50px;
+    color: var(--p-col);
+   
 }
 .faqs h2{
     font-size: 2em;

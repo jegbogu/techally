@@ -1,0 +1,31 @@
+.skills{
+    margin-top: 100px;
+    background-image: url('/eduBg.png');
+    background-size: 1000px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.skills h3{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+   
+}
+.edu h3{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 100px;
+}
+.resume{
+    margin-left: 39%;
+}
+.pro h3{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 100px;
+}

@@ -7,6 +7,10 @@
     line-height: 30px;
     
 }
+.bannerParagraph span{
+    color: var(--s-col);
+    font-weight: bold;
+}
 .btn button{
     margin-top: 30px;
     padding: 20px 80px 20px 80px;

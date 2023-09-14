@@ -7,6 +7,7 @@ import Education from "../component/education/education";
  
 import Button from "../component/button";
 import Project from "../component/project/project";
+import Link from "next/link";
 const Portfolio = () => {
     return ( 
         <Fragment>
@@ -20,7 +21,7 @@ const Portfolio = () => {
        <h3>Skills</h3>
        <Skills/>
        <div className={classes.resume}>
-        <Button   btn={"View Resume"}/>
+       <Link href={"https://drive.google.com/file/d/1iZdEUEDcMxcMRPBrfzZ9s1W26-Es9ahm/view?usp=sharing"} target="_blank"><Button   btn={"View Resume"} /></Link> 
        </div>
        </div>
        <div className={classes.edu}>

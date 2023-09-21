@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 function Project() {
 const[display, setDisplay] = useState(classes.hide)
-const [picture,setPicture] = useState(false)    
+const [picture,setPicture] = useState(" ")    
 const [title,setTitle] = useState(false)    
 
 
@@ -22,7 +22,7 @@ const [title,setTitle] = useState(false)
 
                         <div className={classes.proF}>
                             <div className={classes.figure}>
-                                <img src={el.banner} alt={el.title}/>
+                                <img src={el.banner} alt='project'/>
                             </div>
                             <button onClick={()=>{
                              const s =  data.find((e)=>{
@@ -37,7 +37,7 @@ const [title,setTitle] = useState(false)
                                 <button onClick={()=>{
                                     setDisplay(classes.hide)
                                 }}>Close Modal</button>
-                                <img src={picture} alt={title}/>
+                                <img src={picture} alt='project'/>
                             </div>
                             </div>
                             

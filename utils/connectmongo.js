@@ -1,6 +1,7 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
 const dbLink = `mongodb+srv://${process.env.NAME}:${process.env.PASSWORD}@cluster0.wexsqrp.mongodb.net/${process.env.DB}`
+ 
 
 const connectDB = async ()=>{
     try {

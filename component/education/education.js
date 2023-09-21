@@ -8,9 +8,9 @@ function Education(){
     return(
         <div className={classes.edu}>
             <div >
-                {sectionOne.map((el)=>{
+                {sectionOne.map((el, i)=>{
                     return (
-                        <div className={classes.one}>
+                        <div className={classes.one} key={i}>
                             <h2>{el.degree}</h2>
                             <p className={classes.sch}>{el.school}</p>
                             <div className={classes.cert}>
@@ -22,9 +22,9 @@ function Education(){
                 })}
             </div>
             <div>
-                {sectionTwo.map((el)=>{
+                {sectionTwo.map((el,i)=>{
                     return (
-                        <div className={classes.two}>
+                        <div className={classes.two} key={i}>
                             <h2>{el.degree}</h2>
                             <p className={classes.sch}>{el.school}</p>
                             <div className={classes.cert}>

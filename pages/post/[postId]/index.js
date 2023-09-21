@@ -17,7 +17,7 @@ function PostDetails(props) {
         <Fragment>
             <Head>
                 <title>{props.postData.title}</title>
-                <meta name='description' content={props.postData.description} />
+                <meta name='description' content={props.postData.title} />
 
             </Head>
             <PostDetail

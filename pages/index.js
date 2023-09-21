@@ -8,6 +8,8 @@ import FaqsAll from '../component/Faqs/faqsAll';
 import PostList from '../component/post/postList';
 import Post from '../model/postSchema'
 import connectDB from '../utils/connectmongo';
+import Custom from '../component/sectionThree/custom';
+import MoreServices from '../component/sectionFour/moreservices';
 
 
 
@@ -26,9 +28,15 @@ const HomePage = (props) => {
         <div className={classes.sectionR}>
         <h2 className={classes.header}>Our <span>Email</span> Services</h2>
         <div className={classes.sendEmail}>
-
           <SectionOne />
           <SectionTwo />
+        </div>
+        <div>
+        <Custom/>
+        </div>
+        <div className={classes.moreservices}>
+          <h2>Other <span>Services</span></h2>
+          <MoreServices/>
         </div>
         </div>
         <div className={classes.faqs}>
@@ -39,7 +47,7 @@ const HomePage = (props) => {
           <h2>Articles</h2>
           <PostList posts={props.posts} />
         </div>
-
+       
 
       </Fragment>
 

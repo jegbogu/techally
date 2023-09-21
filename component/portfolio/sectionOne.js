@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import FacebookIcon from '../icons/facebook'
 import GithubIcon from '../icons/github'
 import LinkedinIcon from '../icons/linkedin'
@@ -31,23 +32,21 @@ function SectionOne() {
                     <p><span>Website</span>  joerally.com</p>
                     <div className={classes.social}>
                         <div className={classes.icons}>
-                       
-                        <FacebookIcon/>
                      
                        <div>
-                       <GithubIcon/>
+                      <Link href='https://github.com/jegbogu/' target='_blank'><GithubIcon/></Link> 
                        </div>
                        <div>
-                       <LinkedinIcon/>
+                      <Link href='https://www.linkedin.com/in/egbogu-joseph-13092211a/' target='_blank'><LinkedinIcon/></Link> 
                        </div>
                         <div>
-                        <TwitterIcon/>
+                       <Link href='https://twitter.com/ChineduEgbogu' target='_blank'><TwitterIcon/></Link> 
                         </div>
                         <div>
-                        <YoutubeIcon/>
+                       <Link href='https://www.youtube.com/channel/UCgarg3Tr-WtAhKCesxJonJA' target='_blank'><YoutubeIcon/></Link> 
                         </div>
                         <div>
-                       <ResumeIcon/> 
+                      <Link href='https://drive.google.com/file/d/1iZdEUEDcMxcMRPBrfzZ9s1W26-Es9ahm/view' target='_blank'><ResumeIcon/></Link>  
                         </div>
                       
                         </div>

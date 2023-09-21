@@ -1,6 +1,6 @@
 .skills{
     margin-top: 100px;
-    background-image: url('/eduBg.png');
+    background: url('https://res.cloudinary.com/ovaltech/image/upload/v1694777033/LOGINAPP/lfuda9nikywjekxixyva.png');
     background-size: 1000px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -28,4 +28,14 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 2em;
     margin-top: 100px;
+}
+.contact h3{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 100px;
+}
+.contact span{
+    color: var(--s-col);
 }

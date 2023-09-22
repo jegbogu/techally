@@ -22,7 +22,7 @@ function RecipientDetails(props) {
         router.push('/login')
         return
     }
-console.log(props.userData.dob,'this is the data')
+console.log(props.userData.dob,'this is data')
 
     return (
         <div className={classes.profilePics}>

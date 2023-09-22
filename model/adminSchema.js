@@ -5,7 +5,7 @@ const adminSchema = new Schema({
   firstname: {
     type: String,
     require: true,
-    minLength: [1, 'Firstname characters must be greater five'],
+    minLength: [5, 'Firstname characters must be greater five'],
     toLowerCase: true,
     trim: true,
   
@@ -13,7 +13,7 @@ const adminSchema = new Schema({
   lastname: {
     type: String,
     require: true,
-    minLength: [1, 'Lastname characters must be greater five'],
+    minLength: [5, 'Lastname characters must be greater five'],
     toLowerCase: true,
     trim: true,
   

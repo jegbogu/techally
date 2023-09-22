@@ -22,7 +22,7 @@ function RecipientDetails(props) {
         router.push('/login')
         return
     }
-
+console.log(props.userData.dob,'this is the data')
 
     return (
         <div className={classes.profilePics}>
@@ -31,7 +31,7 @@ function RecipientDetails(props) {
             </div>
             <div className={classes.board}>
                 <DashboardBanner />
-               {props.dob?<RecipientDetail
+               {props.userData.dob?<RecipientDetail
                     id={props.userData.id}
                     fullname={props.userData.fullname}
                     dob={props.userData.dob}
@@ -40,14 +40,14 @@ function RecipientDetails(props) {
                     mtext={props.userData.mtext}
                 />:
                 <WmRecipient
-                    id={props.recipientsData.id}
-                    fullname={props.recipientsData.fullname}
-                    startDate={props.recipientsData.startDate}
-                    endDate={props.recipientsData.endDate}
-                    email={props.recipientsData.email}
-                    phone={props.recipientsData.phone}
-                    checked={props.recipientsData.checked}
-                    mtext={props.recipientsData.mtext}
+                    id={props.userData.id}
+                    fullname={props.userData.fullname}
+                    startDate={props.userData.startDate}
+                    endDate={props.userData.endDate}
+                    email={props.userData.email}
+                    phone={props.userData.phone}
+                    checked={props.userData.checked}
+                    mtext={props.userData.mtext}
                 />} 
             </div>
 
@@ -74,7 +74,7 @@ export const getStaticProps = async (context) => {
     //getting the owner id
     const userid = usersId.slice(usersId.indexOf('|') + 1, 100)
 
-    //getting the recipient email in the array
+    //getting the recipient email in the string
     const recipientEmail = usersId.slice(0, usersId.indexOf('|'))
 
 
@@ -84,6 +84,7 @@ export const getStaticProps = async (context) => {
     let selectedUser
     if (use === "Birthday") {
         selectedUser = await Birthday.findOne({ username: recipientEmail, userID: { $in: [userid] } })
+         
         return {
             props: {
                 userData: {
@@ -102,7 +103,7 @@ export const getStaticProps = async (context) => {
         selectedUser = await Recipients.findOne({ username: recipientEmail, userID: { $in: [userid] } })
         return {
             props: {
-                recipientsData: {
+                userData: {
                     id: selectedUser._id.toString(),
                     fullname: selectedUser.fullname,
                     startDate: selectedUser.startDate,

@@ -1,9 +1,9 @@
 import classes from './footer.module.css'
 import Logo from './logo';
 import Link from 'next/link';
-import FacebookIcon from '../icons/facebook';
-import InstagramIcon from '../icons/instagram';
- import TiktokIcon from '../icons/tiktok';
+import GithubIcon from '../icons/github';
+ import LinkedinIcon from '../icons/linkedin';
+ import YoutubeIcon from '../icons/youtube';
 import TwitterIcon from '../icons/twitter';
  
   
@@ -32,11 +32,12 @@ const Footer = () => {
             <div className={classes.icons}>
                 <p className={classes.rof}>Reach Out & Folow Us:</p>
          
-         <span><Link href="https://www.facebook.com/groups/1022672361973643/?ref=share_group_link" target='_blank'><FacebookIcon/></Link> </span> 
-         <span><Link href="https://instagram.com/earnhivetech?igshid=ZGUzMzM3NWJiOQ=="target='_blank'><InstagramIcon/></Link> </span> 
+         <span> <Link href='https://github.com/jegbogu/' target='_blank'><GithubIcon/></Link> </span> 
+
+         <span> <Link href='https://www.linkedin.com/in/egbogu-joseph-13092211a/' target='_blank'><LinkedinIcon/></Link>  </span> 
        
-         <span><Link href='https://twitter.com/EarnHiveTech?t=iPkSmAjGvY37ipKd3JVpbg&s=09' target='_blank'><TwitterIcon/></Link></span> 
-         <span><Link href='http://www.tiktok.com/@earnhive'target='_blank'><TiktokIcon/></Link></span> 
+         <span> <Link href='https://twitter.com/ChineduEgbogu' target='_blank'><TwitterIcon/></Link> </span> 
+         <span> <Link href='https://www.youtube.com/channel/UCgarg3Tr-WtAhKCesxJonJA' target='_blank'><YoutubeIcon/></Link> </span> 
          
           
           

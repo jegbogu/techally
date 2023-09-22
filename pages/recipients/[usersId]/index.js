@@ -31,7 +31,24 @@ console.log(props.userData.dob,'this  data')
             </div>
             <div className={classes.board}>
                 <DashboardBanner />
-                
+               {props.userData.dob?<RecipientDetail
+                    id={props.userData.id}
+                    fullname={props.userData.fullname}
+                    dob={props.userData.dob}
+                    username={props.userData.username}
+                    phone={props.userData.phone}
+                    mtext={props.userData.mtext}
+                />:
+                <WmRecipient
+                    id={props.userData.id}
+                    fullname={props.userData.fullname}
+                    startDate={props.userData.startDate}
+                    endDate={props.userData.endDate}
+                    email={props.userData.email}
+                    phone={props.userData.phone}
+                    checked={props.userData.checked}
+                    mtext={props.userData.mtext}
+                />} 
             </div>
 
         </div>
@@ -39,15 +56,17 @@ console.log(props.userData.dob,'this  data')
     )
 }
 
-export const getStaticPaths = async () => {
+export async function getStaticPaths() {
     await connectDB()
     const users = await Users.find({}, { _id: 1 })
+
+ 
 
     return {
         fallback: 'blocking',
         paths: users.map((user) => ({
-            params: { usersId: user._id.toString() }
-        }))
+            params: { usersId: user._id.toString() },
+        })),
     }
 }
 

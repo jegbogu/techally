@@ -58,10 +58,7 @@ console.log(props.userData.dob,'this is data')
 
 export async function getStaticPaths() {
     await connectDB()
-    const users = await Users.find({}, { _id: 1 })
-
- 
-
+    // const users = await Users.find({}, { _id: 1 })
     return{
         paths: [],
         fallback: 'blocking', // or 'false' if you don't want to use fallback

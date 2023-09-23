@@ -25,7 +25,7 @@ const recipientSchema = new Schema({
     minLength: [5, 'email characters must be greater five'],
     toLowerCase: true,
     trim: true,
-    unique: true
+    
   },
   phone: {
     type: Number,

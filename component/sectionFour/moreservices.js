@@ -7,8 +7,8 @@ function MoreServices() {
                 <h3>ERP & SaaS Products</h3>
                 <ul>
                     <li>Automated System</li>
-                    <li>Admin Dashboard and Mangement system</li>
-                    <li>User Dashboard and Mangement system</li>
+                    <li>Admin Dashboard and Management system</li>
+                    <li>User Dashboard and Management system</li>
                     <li>Payment System</li>
                     <li>Blog and SEO</li>
                     <li>Fantastic UI/UX</li>
@@ -20,8 +20,8 @@ function MoreServices() {
                 <p>School Management application </p>
                 <p> Hospital Management Application </p>
                 <ul>
-                    <li>Admin Dashboard and Mangement system</li>
-                    <li>User Dashboard and Mangement system</li>
+                    <li>Admin Dashboard and Management system</li>
+                    <li>User Dashboard and Management system</li>
                     <li>Manage Products from Admin Dashboard</li>
                     <li>Payment System</li>
                     <li>Users Sign up System</li>

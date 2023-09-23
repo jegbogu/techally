@@ -71,12 +71,13 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps = async (context) => {
+    await connectDB()
     let usersId = context.params.usersId
     if(usersId===null){
         usersId = usersId.slice(usersId.indexOf('|') + 1, 100)
     }
     console.log(usersId)
-    await connectDB()
+  
     //getting the owner id
     const userid = usersId.slice(usersId.indexOf('|') + 1, 100)
 

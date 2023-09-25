@@ -27,7 +27,7 @@ function PostItem(props) {
 
     <div className={classes.item}>
       <div className={classes.figure}>
-        <img src={props.image} alt={props.title} />
+       
         <Image
           src= {props.image}
           alt={props.title}

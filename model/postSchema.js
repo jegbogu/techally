@@ -1,5 +1,7 @@
-import { Schema, model, models } from 'mongoose'
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+
+const { Schema } = mongoose;
+mongoose.Promise = global.Promise;
 
 const postSchema = new Schema({
     title: {
@@ -48,5 +50,5 @@ spaceThree:{
  
    
 })
-
-module.exports = models.Post || mongoose.model('Post', postSchema)
+ 
+module.exports = mongoose.models.Post || mongoose.model('Post', postSchema)

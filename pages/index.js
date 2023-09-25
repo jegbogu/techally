@@ -43,10 +43,7 @@ const HomePage = (props) => {
           <h2>FAQS</h2>
           <FaqsAll />
         </div>
-        <div className={classes.post}>
-          <h2>Articles</h2>
-          <PostList posts={props.posts} />
-        </div>
+       
        
 
       </Fragment>
@@ -58,24 +55,4 @@ const HomePage = (props) => {
 
 export default HomePage;
 
-export async function getStaticProps() {
-  await connectDB()
-  const posts = await Post.find({})
-  
-
-  return {
-    props: {
-      posts: posts.map((post) => ({
-        title: post.title,
-
-        category: post.category,
-        image: post.image,
-
-        description: post.description,
-
-        id: post._id.toString(),
-      })),
-      revalidate: 1,
-    }
-  }
-}
+ 

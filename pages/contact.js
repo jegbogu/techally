@@ -21,6 +21,7 @@ const Contact = () => {
 
     const emailInputRef = useRef()
     const phoneInputRef = useRef()
+    const useInputRef = useRef()
     const router = useRouter()
 
 
@@ -127,10 +128,20 @@ const Contact = () => {
                                 ref={phoneInputRef}
                                 name='phone'
                             />
-
                              
                         </div>
-
+                        <div className={classes.formControl}>
+                    <label htmlFor="use">Required Service</label>
+                    <select required id="use" ref={useInputRef} name="use">
+                        <option value='custom Email/SMS Auto System'>Custom Email/SMS Auto System</option>
+                        <option value='ERP & SaaS Products'>ERP & SaaS Products</option>
+                        <option value='E-Commerce Application & Management Application'>E-Commerce Application & Management Application</option>
+                        <option value='Bussiness website & SEO'>Bussiness website & SEO</option>
+                        <option value='Learn a skill'>I want to Learn a Skill</option>
+                        <option value='Learn a skill'>I want to Hire You</option>
+                    </select>
+                </div>
+                    
 
                         <button type="submit">Submit  {spinner}</button>
                          

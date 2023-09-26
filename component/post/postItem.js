@@ -32,7 +32,7 @@ function PostItem(props) {
           src= {props.image}
           alt={props.title}
           width={500}
-          height={500}
+          height={200}
         />
       </div>
 

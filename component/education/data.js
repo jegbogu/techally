@@ -2,7 +2,7 @@ const data = [
     {
         degree:"B.ENG Materials and Metallurgical Engineering",
         school: "Federal University Of Technology Owerri",
-        certificate:"Request"
+        certificate:"On Request"
     },
     {
         degree:"Fundamentals in cyber security",
@@ -27,7 +27,7 @@ const data = [
     {
         degree:"Environmental Health and safety 1,2 and 3",
         school: "Chartered institute of contract project and facility management",
-        certificate:"Request"
+        certificate:"On Request"
     },
 ]
 

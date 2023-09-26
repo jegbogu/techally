@@ -28,7 +28,7 @@ function Education(){
                             <h2>{el.degree}</h2>
                             <p className={classes.sch}>{el.school}</p>
                             <div className={classes.cert}>
-                            <p><Link href={el.certificate} target='_blank'>{el.certificate}</Link> </p>
+                            <p><Link href={el.certificate} target='_blank'>{el.certificate}</Link></p>
                             </div>
                             
                         </div>

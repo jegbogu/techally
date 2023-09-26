@@ -32,7 +32,14 @@
     width: 100%;
   
 }
- 
+.contact{
+    margin-left: 69%;
+}
+ .contact p{
+    color: var(--s-col);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .8em;
+ }
 .main ul li{
     list-style: none;
 }

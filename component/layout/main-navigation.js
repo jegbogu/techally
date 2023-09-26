@@ -82,12 +82,6 @@ const MainNavigation = () => {
 
                                 </div>
                                 </div>
-                                
-
-                            
-
-
-
 
                             </ul>
                         </main>
@@ -95,7 +89,9 @@ const MainNavigation = () => {
 
 
                 </nav>
-              
+              <div className={classes.contact}>
+                <p>jegbogu@gmail.com | +2348167577935</p>
+              </div>
             </div>
             <div className={classes.mobileHeader}>
                 <div className={classes.sign}>
@@ -116,38 +112,13 @@ const MainNavigation = () => {
                         <Hamburger />
                         <div className={classes.menu}>
                             <main>
-                                <ul>
-                                    <li><Link href='/'>Home</Link></li>
-                                    <li><Link href='/about'>About</Link></li>
-                                    <div>
-                                        <li><Link href='/activation-code'>Get Coupon Code</Link></li>
-                                    </div>
-                                    <div>
-                                        <li><Link href='/coupon-checker'>Check Code</Link></li>
-                                    </div>
-                                    <div>
-                                        <li><Link href='/how-it-works'>How it works</Link></li>
-                                    </div>
-                                    <div>
-                                        <li><Link href='/top-earners'>Top Earners</Link></li>
-                                    </div>
-
-                                    <li><Link href='/advert'>Hive Advert</Link></li>
-                                    <li><Link href='/contact'>Contact</Link></li>
-
-                                    <div>
-                                        <li><Link href='/tandc'>Terms and Conditions</Link></li>
-                                    </div>
-                                    <div>
-                                        <li><Link href='/privacy'>Privacy Policy</Link></li>
-                                    </div>
-
-
-                                    <li><Link href='/freelancing'>Freelancing</Link></li>
-
-
-
-                                </ul>
+                                 <ul>
+                                 <li><Link href='/dashboard'>Dashboard</Link></li>
+                                <li><Link href='/portfolio'>My Portfolio</Link></li>
+                                <li><Link href='/contact'>Contact</Link></li>
+                                <li><Link href='/services'>Services</Link></li>
+                                <li><Link href='/blog'>Blog</Link></li>
+                                 </ul>
                             </main>
 
                         </div>

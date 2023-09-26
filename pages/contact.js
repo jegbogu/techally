@@ -15,13 +15,12 @@ const Contact = () => {
 
     const [show, setShow] = useState(false)
     const [emailErr, setEmailErr] = useState(' ')
-    const [password, setPassErr] = useState(' ')
-    const [waitMsg, setWaitMsg] = useState(' ')
+    
     const [spinner, SetSpinner] = useState(false)
     const [isLoading, setIsLoding] = useState('')
 
     const emailInputRef = useRef()
-    const passwordInputRef = useRef()
+    const phoneInputRef = useRef()
     const router = useRouter()
 
 

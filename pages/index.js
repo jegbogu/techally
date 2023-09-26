@@ -44,7 +44,7 @@ const HomePage = (props) => {
           <FaqsAll />
         </div>
         <div className={classes.post}>
-          <h2>Articles</h2>
+        <h2 style={{fontSize:"2.5em"}}>Ar<span className={classes.tic}>tic</span>les</h2>
           <PostList posts={props.posts} />
         </div>
        

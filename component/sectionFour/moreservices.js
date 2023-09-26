@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '../button'
 import classes from './moreservices.module.css'
 function MoreServices() {
@@ -13,7 +14,7 @@ function MoreServices() {
                     <li>Blog and SEO</li>
                     <li>Fantastic UI/UX</li>
                 </ul>
-                <Button btn={'Start Now'} />
+                <Link href='/contact'><Button btn={'Start Now'} /></Link> 
             </div>
             <div className={classes.ecom}>
                 <h3>E-Commerce Application & Management Application</h3>
@@ -28,7 +29,7 @@ function MoreServices() {
                     <li>Blog and SEO</li>
                     <li>Fantastic UI/UX</li>
                 </ul>
-                <Button btn={'Start Now'} />
+                <Link href='/contact'><Button btn={'Start Now'} /></Link> 
             </div>
             <div className={classes.bus}>
                 <h3>Bussiness website & SEO</h3>
@@ -39,7 +40,7 @@ function MoreServices() {
                     <li>Contact Forms and Quick Response System</li>
                     <li>Social Media Management</li>
                 </ul>
-                <Button btn={'Start Now'} />
+               <Link href='/contact'><Button btn={'Start Now'} /></Link> 
             </div>
         </div>
     )

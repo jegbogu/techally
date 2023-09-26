@@ -1,5 +1,6 @@
 import Button from "../button"
 import classes from './custom.module.css'
+import Link from 'next/link'
 
 function Custom(){
     return(
@@ -12,7 +13,7 @@ function Custom(){
                     <li>Automated SMS/Emails </li>
 
                 </ul>
-            <Button btn={'Sign Up'}/>
+                <Link href='/contact'><Button btn={'Start Now'} /></Link> 
             </div>
           
         </div>

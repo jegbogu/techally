@@ -13,9 +13,9 @@ const Blog = (props) => {
             <meta name="description" content="We have our articles for technical writers"/>
         </Head>
         <div>
-        <h1>Blog</h1>
+       
         <div className={classes.post}>
-          <h2>Articles</h2>
+          <h2 style={{fontSize:"2.5em"}}>Ar<span className={classes.tic}>tic</span>les</h2>
           <PostList posts={props.posts} />
         </div>
         </div>

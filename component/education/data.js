@@ -2,7 +2,7 @@ const data = [
     {
         degree:"B.ENG Materials and Metallurgical Engineering",
         school: "Federal University Of Technology Owerri",
-        certificate:"https://drive.google.com/file/d/1NIVtyfELWMqzSx8Hznlsio8oqH7UDvYu/view?usp=sharing"
+        certificate:"Request"
     },
     {
         degree:"Fundamentals in cyber security",
@@ -27,7 +27,7 @@ const data = [
     {
         degree:"Environmental Health and safety 1,2 and 3",
         school: "Chartered institute of contract project and facility management",
-        certificate:"https://drive.google.com/file/d/170hbOjxxYpSE6iXszmpXzgw_sxF3nves/view"
+        certificate:"Request"
     },
 ]
 

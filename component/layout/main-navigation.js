@@ -90,7 +90,7 @@ const MainNavigation = () => {
 
                 </nav>
               <div className={classes.contact}>
-                <p>joerallytech.com | +2348167577935</p>
+                <p>joerallytech@gmail.com | +2348167577935</p>
               </div>
             </div>
             <div className={classes.mobileHeader}>

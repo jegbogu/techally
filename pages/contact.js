@@ -2,19 +2,14 @@ import Head from "next/head";
 import { useRef } from "react";
 import { useState } from "react";
 import { useRouter } from 'next/router';
-import Link from 'next/link';
-import { useContext } from "react";
-import userContext from "../store/userContext";
+ 
+ 
 import { signIn } from "next-auth/react";
 import Spinner from "../component/icons/spinner";
 import { Fragment } from "react";
 import classes from '../component/home-page/homeForm.module.css'
 const Contact = () => {
-    const { user, setUser } = useContext(userContext)
-    const validPassword = new RegExp('^(?=.*?[A-Za-z])(?=.*?[0-9]).{6,}$');
 
-    const [show, setShow] = useState(false)
-    const [emailErr, setEmailErr] = useState(' ')
     
     const [spinner, SetSpinner] = useState(false)
     const [isLoading, setIsLoding] = useState('')
@@ -22,6 +17,7 @@ const Contact = () => {
     const emailInputRef = useRef()
     const phoneInputRef = useRef()
     const useInputRef = useRef()
+    const messageInputRef = useRef()
     const router = useRouter()
 
 
@@ -103,7 +99,7 @@ const Contact = () => {
             </Head>
             <div>
                 <div className={classes.section}>
-
+                    <h1>I'm So <span>Glad to Have you</span> Here</h1>
                     <form onSubmit={submitHandler} className={classes.form}>
                         <h3>{isLoading}</h3>
                         <div className={classes.formControl}>
@@ -115,10 +111,7 @@ const Contact = () => {
                                 name='username'
                             />
                         </div>
-                        <div>
-
-                            <h3>{emailErr}</h3>
-                        </div>
+                        
                         <div className={classes.formControl}>
                             <label htmlFor="phone">Phone Number</label>
 
@@ -141,7 +134,20 @@ const Contact = () => {
                         <option value='Learn a skill'>I want to Hire You</option>
                     </select>
                 </div>
-                    
+                <div className={classes.formControl}>
+                    <label htmlFor="message">Message</label>
+                    <textarea
+                        id='message'
+                        required
+                        rows='5'
+                        ref={messageInputRef}
+                        minLength='10'
+                       
+                        name="message"
+                    >
+                    </textarea>
+                </div>
+
 
                         <button type="submit">Submit  {spinner}</button>
                          

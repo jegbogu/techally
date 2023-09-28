@@ -5,6 +5,7 @@ import Link from 'next/link'
 function Custom(){
     return(
         <div className={classes.custom}>
+             
             <h2>Let us build your own custom <span>Email/SMS</span> Auto System</h2>
             <div>
                 <h3>Core <span>Features</span></h3>
@@ -15,6 +16,7 @@ function Custom(){
                 </ul>
                 <Link href='/contact'><Button btn={'Start Now'} /></Link> 
             </div>
+           
           
         </div>
     )

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import classes from './index.module.css'
+import classes from './services.module.css'
 
 import SectionOne from '../component/sectionOne/sectionOne';
 import SectionTwo from '../component/sectionTwo/sectionTwo';

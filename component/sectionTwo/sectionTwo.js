@@ -23,7 +23,7 @@ function SectionTwo() {
                 </div>
                 <div className={classes.wemail}>
                     <h3>Birthday <span>Email</span></h3>
-                    <p>Get Started with just these three steps</p>
+                    <p><b>Get Started with just these three steps</b></p>
                     <ul>
                         <li>Create an Account</li>
                         <li>Log into your dashboard</li>

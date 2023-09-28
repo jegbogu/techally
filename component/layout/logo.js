@@ -1,6 +1,9 @@
+import classes from './logo.module.css'
 const Logo = () => {
     return ( 
-        <div><img src="logoTwo.png" alt="logo" width={150}/></div>
+        <div className={classes.logo}>
+            <img src="logoTwo.png" alt="logo" width={150}/>
+        </div>
      );
 }
  

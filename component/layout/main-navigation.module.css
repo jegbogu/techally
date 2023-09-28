@@ -324,7 +324,7 @@
     }
     .userInit li{
         border: solid 1px var(--s-col);
-        background:linear-gradient(45deg,var(--s-col),#69B4CE) ;
+        background:linear-gradient(45deg,var(--s-col),var(--b-col),var(--p-col)) ;
        
         width: 60px;
          padding: 13px 8px 13px 8px;
@@ -448,7 +448,7 @@
      }
      .userInit li{
          border: solid 1px var(--s-col);
-         background:linear-gradient(45deg,var(--s-col),#69B4CE) ;
+         background:linear-gradient(45deg,var(--s-col),var(--b-col),var(--p-col)) ;
         
          width: 60px;
           padding: 13px 8px 13px 8px;
@@ -584,13 +584,13 @@
      }
      .userInit li{
          border: solid 1px var(--s-col);
-         background:linear-gradient(45deg,var(--s-col),#69B4CE) ;
+         background:linear-gradient(45deg,var(--s-col),var(--b-col),var(--p-col)) ;
         
          width: 60px;
           padding: 13px 8px 13px 8px;
          margin-top: 10px;
         border-radius: 10px;
-         margin-left: 500px;
+         margin-left: -60px;
        
         list-style-type: none;
         text-align: center;

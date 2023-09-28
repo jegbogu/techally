@@ -39,16 +39,17 @@
         background: url('https://res.cloudinary.com/ovaltech/image/upload/v1694807060/LOGINAPP/m8izwz0xudomtwjm8l8l.png') left 30px top 70px;
         background-repeat: no-repeat;
         height: 470px;
+        background-attachment: fixed;
     }
     .custom h2{
         margin-top: 50px;
         text-align: center;
         margin-bottom: 150px;
-        font-size: 2em;
+        font-size: 1.4em;
         font-family: 'Times New Roman', Times, serif;
     }
     .custom>div{
-      margin-top: -100px;
+      margin-top: -140px;
         margin-left: -0px;
         padding-bottom: 50px;
         padding-left: 20px;

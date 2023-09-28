@@ -58,3 +58,66 @@
 
 }
  
+@media screen and (max-width:768px) {
+    .moreservices{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .moreservices li{
+        list-style-type: none;
+        line-height: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+    }
+    .moreservices>div{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+    .erp{
+        background-color:#001c2a2e;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid rgb(227, 225, 225);
+        box-shadow: 0 0 2px rgb(225, 223, 223);
+    }
+    .erp h3{
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 20px;
+    
+    }
+    .ecom{
+        background-color: #e6995651;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid rgb(227, 225, 225);
+        box-shadow: 0 0 2px rgb(225, 223, 223);
+    }
+    .ecom p{
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--t-col);
+        font-size: 1em;
+    }
+    .ecom h3{
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 20px;
+    
+    }
+    .bus{
+        background-color: #61727a65;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid rgb(227, 225, 225);
+        box-shadow: 0 0 2px rgb(225, 223, 223);
+    }
+    .bus h3{
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 20px;
+    
+    }
+}

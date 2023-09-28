@@ -35,6 +35,44 @@
     margin-top: 30px;
 }
  
+@media screen and (max-width:1028px) {
+    @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 0%;
+        }
+      }
+    
+    .banner{
+        display: flex;
+        justify-content: space-around;
+        
+       background: linear-gradient(45deg, rgb(197, 197, 245),rgb(183, 183, 247), rgb(234, 233, 228), rgb(226, 226, 243), rgb(255, 255, 255), rgb(223, 223, 235), #ffffff);
+      background-size: 200% 100%;
+      animation: gradientAnimation 10s linear infinite;
+        padding-bottom: 80px;
+        padding-top: 100px;
+        margin-top: -2px;
+        
+    }
+    
+    
+    .bannerSection{
+        margin-top: 50px;
+        width: 50%;
+     
+    }
+    .bannerImage{
+         
+        margin-right: 40px;
+    }
+    
+    .bannerSection>div{
+        margin-top: 30px;
+    }
+}
 
 @media screen and (max-width:768px)  {
     .banner{
@@ -58,7 +96,7 @@
     }
  }
  
-@media screen and (max-width:425px)  {
+@media screen and (max-width:411px)  {
     .banner{
         display: flex;
         flex-direction: column-reverse;
@@ -72,35 +110,14 @@
         margin-top: 50px;
         margin: 0 auto;
         width: 100%;
-        padding:0px 30px 0px 50px
+        padding:0px 0px 0px 0px
         
     }
     .bannerImage{
         margin-top: 0px ;
-        margin-left: -40px;
+        margin-left: -60px;
+       
     }
  }
-@media screen and (max-width:320px)  {
-    .banner{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 50px;
-        background-color: black;
-        color: white;
-        padding-bottom: 80px;
-        padding-top: 80px;
-    }
-    .bannerSection{
-        margin-top: 50px;
-        margin: 0 auto;
-        width: 100%;
-        padding:0px 15px 0px 15px
-        
-    }
-    .bannerImage{
-        margin-top: 0px ;
-        margin-left: -40px;
-         width: 20%;
-    }
- }
+ 
  

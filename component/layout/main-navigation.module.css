@@ -509,6 +509,17 @@
     .nav{
      display: none;
     } 
+    .header{
+        background: #001C2A;
+        position: sticky;
+        top: 0px;
+        padding-top: 30px;
+        width: 100%;
+        padding-bottom: 10px;
+        padding-left: 5%;
+        box-shadow: var(--t-col) 1px 2px 3px;
+       
+    }
     .mobileHeader{
      display: block;
     }
@@ -523,7 +534,10 @@
      margin-bottom: 30px;
  
     }
-    
+    .mobileLogo{
+        width: 10%;
+ 
+    }
      
  .header{
     margin-bottom: -50px;

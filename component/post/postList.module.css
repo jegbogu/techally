@@ -22,7 +22,7 @@
     
     }
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:780px) {
     .list{
         list-style: none;
         list-style-type: none;

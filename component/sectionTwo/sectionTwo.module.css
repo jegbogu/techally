@@ -47,3 +47,56 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 1em;
 }
+
+@media screen and (max-width:768px) {
+    .allSection{
+     
+        margin-left: 5%;
+        padding: 30px;
+        border-radius: 10px;
+        
+        width: 90%;
+        border: 2px solid rgb(227, 225, 225);
+      box-shadow: 0 0 2px rgb(225, 223, 223);
+    }
+    .sectionOne{
+        
+        width: 100%;
+      
+        border-top: solid var(--s-col) 10px;
+        border-radius: 10px;
+    }
+    .section{
+        display: flex;
+    }
+    .bg{
+        background-color: var(--p-col);
+        padding: 50px;
+    }
+    .figure img{
+        border-radius: 50%;
+        width: 100%;
+    }
+    .wemail h3{
+        margin-top: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.9em;
+        color: #82C0EF;
+        font-weight: bold;  
+        font-weight: 900;
+    }
+    .wemail p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+        margin-top:10px ;
+        margin-bottom: 20px;
+    }
+    .wemail span{
+        color: var(--s-col);
+    }
+    .wemail ul li{
+        list-style-type: square;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+    }
+}

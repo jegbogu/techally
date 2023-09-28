@@ -52,3 +52,11 @@
     color: var(--s-col);
     font-size: 2em;
 }
+@media screen and (max-width:768px){
+    .sendEmail{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

@@ -58,7 +58,7 @@
  
 @media screen and (max-width:411px)  {
     .bannerParagraph{
-        color: #69B4CE;
+        color: rgb(75, 5, 5);
         font-size: 1.2em;
         margin-left: 20px;
         width: 85%;

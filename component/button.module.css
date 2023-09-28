@@ -14,3 +14,21 @@
     background:linear-gradient(45deg,var(--s-col),var(--p-col)) ;
     color:var(--b-col);
 }
+@media screen and (max-width:411px) {
+    .btn button{
+        margin-top: 30px;
+        padding: 20px 40px 20px 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.1em;
+        border: solid 1px #754298;
+        background:linear-gradient(45deg,var(--p-col),var(--s-col)) ;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    .btn button:hover{
+      
+        background:linear-gradient(45deg,var(--s-col),var(--p-col)) ;
+        color:var(--b-col);
+    }
+}

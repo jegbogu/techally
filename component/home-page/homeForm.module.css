@@ -143,8 +143,9 @@
     .section h1{
         font-family: 'Times New Roman', Times, serif;
         color: var(--t-col);
-        text-align: center;
+      margin-left: -30px;
         margin-bottom: 50px;
+        padding: 20px;
     }
     .section span{
         color: var(--s-col);
@@ -185,7 +186,7 @@
         box-shadow: 1px 2px 3px gray;
         border-radius: 20px;
         margin-top: 10px;
-        color:#2F82AC;
+        color:var(--s-col);
         font-weight: bold;
     }
     .formControl textarea{

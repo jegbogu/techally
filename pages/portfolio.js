@@ -19,18 +19,18 @@ const Portfolio = () => {
             <div>
                 <SectionOne />
                 <div className={classes.skills}>
-                    <h3>Skills</h3>
+                    <h3>Sk<pan>il</pan>ls</h3>
                     <Skills />
                     <div className={classes.resume}>
                         <Link href={"https://drive.google.com/file/d/1iZdEUEDcMxcMRPBrfzZ9s1W26-Es9ahm/view?usp=sharing"} target="_blank"><Button btn={"View Resume"} /></Link>
                     </div>
                 </div>
                 <div className={classes.edu}>
-                    <h3>Education</h3>
+                    <h3>Ed<span>uca</span>tion</h3>
                     <Education />
                 </div>
                 <div className={classes.pro}>
-                    <h3>Featured Projects</h3>
+                    <h3>Featured <span>Projects</span></h3>
                     <Project />
                 </div>
                 <div className={classes.contact}>

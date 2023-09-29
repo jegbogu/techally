@@ -209,3 +209,110 @@
     }
 }
 
+@media screen and (max-width:780px) {
+    .head {
+        width: 100%;
+    }
+    
+    .banner {
+        width: 100%;
+        background-color: var(--p-col);
+        height: 300px;
+        z-index: -1;
+    }
+    .figure{
+        width: 100%;
+    }
+    .figure img{
+        width: 100%;
+       height: 100%;
+    }
+    .firstly{
+        width: 60%;
+    }
+    
+    .intro {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-left: 7.5%;
+       
+        background:linear-gradient(45deg,rgb(250, 245, 245),rgb(250, 245, 245),rgb(250, 245, 245),rgb(226, 240, 244));
+        z-index: 1;
+        margin-top: -190px;
+       
+    }
+    .welcome{
+        background-color: var(--p-col);
+        color: var(--b-col);
+        width: 100%;
+        margin-left: 5%;
+        padding: 20px;
+        margin-top: 20px;
+        border-top-right-radius:10px ;
+        border-top-left-radius:10px ;
+        border-bottom-left-radius:10px ;
+    }
+    .welcome p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+    .info{
+        padding-bottom: 20px;
+        border-bottom: solid gray 1px;
+        margin-left: 5%;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .info h3{
+        margin-bottom: 5px;
+        font-size: 1em;
+        width: 100%;
+    }
+    .info span{
+        color: var(--s-col);
+    }
+    .secondly{
+        margin-top: 50px;
+        margin-left: 5%;
+    }
+    .secondly span{
+        font-weight: bold;
+        padding-right: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1em;
+    }
+    .secondly p{
+        margin-top: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .social{
+        height: 50px;
+        background-color: var(--p-col);
+        margin-top: 72px;
+        width: 160%;
+        margin-left:1px;
+    }
+    .icons{
+        margin-left: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+        
+    }
+    .icons div{
+        display: inline;
+        padding-left: 50px;
+    }
+    .resume button{
+        background-color: var(--s-col);
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+       
+    }
+    .resume{
+        margin-top: -100px;
+    }
+}
+

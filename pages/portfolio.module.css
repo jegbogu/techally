@@ -39,3 +39,16 @@
 .contact span{
     color: var(--s-col);
 }
+.skills pan{
+    color: var(--s-col); 
+}
+.edu span{
+    color: var(--s-col); 
+}
+.pro span{
+    color: var(--s-col); 
+}
+
+@media screen and (max-width:780px){
+    
+}

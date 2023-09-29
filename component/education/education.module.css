@@ -57,3 +57,13 @@
     color: white;
     padding-right: 50px;
 }
+@media screen and (max-width:1440px){
+    .edu{
+        display: flex;
+        width: 90%;
+        margin-left: 9%;
+        margin-top: 20px;
+        background-image: url();
+    }
+    
+}

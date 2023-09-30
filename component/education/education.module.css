@@ -67,3 +67,14 @@
     }
     
 }
+@media screen and (max-width:768px){
+    .edu{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 9%;
+        margin-top: 20px;
+        background-image: url();
+    }
+    
+}

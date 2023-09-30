@@ -50,5 +50,12 @@
 }
 
 @media screen and (max-width:780px){
-    
+    .resume{
+        margin-left: 39%;
+    }
+}
+@media screen and (max-width:411px){
+    .resume{
+        margin-left: 27%;
+    }
 }

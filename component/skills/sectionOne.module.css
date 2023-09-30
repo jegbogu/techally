@@ -90,6 +90,7 @@
     .profile p{
         margin-bottom: 15px;
         text-align: justify;
+        line-height: 30px;
     }
 
     .rate{
@@ -167,12 +168,13 @@
     }
     .profile p{
         margin-bottom: 15px;
-        text-align: justify;
+        text-align: start;
+        line-height: 30px;
     }
 
     .rate{
   
-        width: 190%;
+        width: 210%;
     }
     .rate>div{
        margin-left: -20px;

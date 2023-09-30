@@ -13,7 +13,7 @@ function Skills() {
                 </p>
 
                 <p>
-                    I have worked with different companies as a Full stack Web developer, IT Consultant/Support, Head Operations, Cloud Developer, Front End Web Developer, Lead Developer, etc.
+                    I have worked with different companies as a <b>Full stack Web developer, IT Consultant/Support,Backend Developer, Head Operations, Cloud Developer, Front End Web Developer, Lead Developer,</b> etc.
                 </p>
 
                 <p>
@@ -21,7 +21,7 @@ function Skills() {
                 </p>
 
                 <p>
-                    I am proficient in languages and frameworks such as React.js, Next.js, Node.js, and MongoDB as well as scripting languages such as JavaScript and Typescript.
+                    I am proficient in the use of frameworks such as <b>React.js, Next.js, Node.js,</b> as well as scripting languages such as <b>JavaScript and Typescript.</b>
                 </p>
                 <p>
                     I am also Proficient in the use of AutoCAD (2D/3D), Solid Works, Elevation Design, Layout Design, Isometric, and Iso Mechanical Design
@@ -32,7 +32,7 @@ function Skills() {
                 </p>
 
                 <p>
-                I have built, deployed, and managed different Applications using HTML, CSS, Tailwind CSS, Bootstrap, Chakra, JavaScript, React.js, Next.js, EJS, Express.js, MongoDB, etc. and I have also used Content Management Systems such as WordPress; this includes use of different plugins like Elementor, WooCommerce, etc.
+                I have built, and managed different Applications using <b>HTML, CSS, Tailwind CSS, Bootstrap, Chakra, Matrial UI, Phython, MySQL, PHP, JavaScript, React.js, Next.js, EJS, Express.js, MongoDB, etc</b> and I have also used Content Management Systems such as WordPress; this includes use of different plugins like Elementor, WooCommerce, etc.
                 </p>
                
 

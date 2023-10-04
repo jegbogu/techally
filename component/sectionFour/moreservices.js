@@ -32,7 +32,7 @@ function MoreServices() {
                 <Link href='/contact'><Button btn={'Start Now'} /></Link> 
             </div>
             <div className={classes.bus}>
-                <h3>Bussiness website & SEO</h3>
+                <h3>Business website & SEO</h3>
                 <ul>
                     <li>Fantastic UI/UX</li>
                     <li>Well Optimised Articles</li>

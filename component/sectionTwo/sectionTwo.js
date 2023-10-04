@@ -27,7 +27,7 @@ function SectionTwo() {
                     <ul>
                         <li>Create an Account</li>
                         <li>Log into your dashboard</li>
-                        <li>Register the birthday of each your intending Recipient</li>
+                        <li>Register your intending Recipient(s) Birthday</li>
                     </ul>
                     <Button btn={<Link href='/register'>Start Now</Link>} />
                 </div>

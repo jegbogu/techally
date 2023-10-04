@@ -9,11 +9,11 @@ const FaqsAll = () => {
       content: 'We believe comunication is fundamental human rights, so we also provide a free version of Joerally service to public. We do not serve ads or sell your email content or history',
     },
     {
-      title: 'Can I update my users data?',
+      title: 'Can I Update a User data?',
       content: 'Yes you can update your user details when neccessary from your dashboard',
     },
     {
-      title: 'Can I terminate the use of my services when ever I want?',
+      title: 'Can I terminate the use of my services whenever I want?',
       content: 'You can terminate your service through your Dashboard',
     },
   ];

@@ -1,3 +1,85 @@
+@media screen and (max-width:2600px){
+   .allPro{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      width: 90%;
+      margin-left: 5%;
+      
+      
+  }
+  .projects{
+      border: solid rgb(218, 215, 215) 1px;
+      width: 95%;
+      padding: 20px;
+      margin-bottom: 10px;
+      background:linear-gradient(45deg,rgb(250, 245, 245),rgb(250, 245, 245),rgb(250, 245, 245),rgb(226, 240, 244));
+      border-radius: 10px;
+      
+  }
+   .proF{
+      width: 100%;
+      
+   }
+   .proF button{
+     background:linear-gradient(45deg,var(--p-col),var(--s-col)) ;
+     border: none;
+     padding: 5px;
+     color: white;
+     border-radius: 2px;
+     font-size: .8em;
+     margin-left: 88%;
+     margin-top: 10px;
+     cursor: pointer;
+   }
+   .proF button:hover{
+    
+     background:linear-gradient(45deg,var(--s-col),var(--p-col)) ;
+     color:var(--b-col);
+  }
+   .figure{
+      width: 100%;
+   }
+   .figure img{
+      width: 100%;
+   }
+   .title p{
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: var(--p-col);
+   }
+   .link p{
+      color: var(--t-col);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: .9em;
+      
+   }
+   .picture{
+      width: 90%;
+     position: absolute;
+     top: 480%;
+     left: 5%;
+     filter: blur(0px);
+     background-color: rgba(21, 40, 40, 0.336);
+     padding-top: 50px;
+     padding-bottom: 50px;
+   }
+   .picture img{
+      width: 20%;
+      margin-left: 40%;
+      height: 100%;
+   }
+   .hide{
+     display: none;
+   }
+   .show{
+     display: block;
+   }
+   
+}
 @media screen and (max-width:1445px){
    .allPro{
       display: grid;

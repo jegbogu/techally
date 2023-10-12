@@ -5,7 +5,7 @@
 }
 .sectionR{
     margin-bottom: 100px;
-    background: url('/stpg.png') right 300px bottom 10px;
+    background: url('https://joerally.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstpg.a98e8f82.png&w=640&q=75') right 300px bottom 10px;
     background-attachment: fixed;
     background-size: 1500px;
 }

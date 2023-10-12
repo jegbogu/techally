@@ -15,7 +15,7 @@ export default function App({ Component, pageProps:{session,...pageProps}, }) {
       <Layout>
         <Head>
           <meta name='viewport' content='width=device-width, initial-scale=1' />
-          <link rel="shortcut icon" href="/siteicon.png" type="image/x-icon"/>
+          <link rel="shortcut icon" href="https://res.cloudinary.com/ovaltech/image/upload/v1697120185/LOGINAPP/rn8ooam0n04iqbcqs9jq.png" type="image/x-icon"/>
         </Head>
         <Component {...pageProps} />
       </Layout>

@@ -10,6 +10,7 @@ import Post from '../model/postSchema'
 import connectDB from '../utils/connectmongo';
 import Custom from '../component/sectionThree/custom';
 import MoreServices from '../component/sectionFour/moreservices';
+ 
 
 
 
@@ -26,6 +27,7 @@ const HomePage = (props) => {
         </Head>
         <BannerL />
         <div className={classes.sectionR}>
+          
         <h2 className={classes.header}>Our <span>Email</span> Services</h2>
         <div className={classes.sendEmail}>
           <SectionOne />

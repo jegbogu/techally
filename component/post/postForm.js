@@ -2,7 +2,8 @@ import { useRef, useState } from 'react';
 import classes from './postForm.module.css';
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic'
-
+import Image from 'next/image';
+ import stpg from '../../public/stpg.png'
 const ReactQuill = dynamic(import('react-quill'), { ssr: false })
 import QuillEditor from './quilleditor';
 
@@ -109,6 +110,12 @@ function PostForm() {
           <button type='submit'> Add Post</button>
         </div>
       </form>
+      <Image
+        src={stpg}
+        alt="email"
+        width={290}
+        height={200}
+      />
     </div>
   );
 }

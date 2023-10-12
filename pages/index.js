@@ -22,7 +22,7 @@ const HomePage = (props) => {
           <title>Joerally | Quality articles and service to humans..</title>
           <meta
             name='description'
-            content='This Application can help you send bulk automated schelduled emails, and SMS. This Application also has quality articles for tech writers'
+            content='This Application can help you send bulk automated schelduled emails. This Application also has quality articles for tech writers'
           />
         </Head>
         <BannerL />

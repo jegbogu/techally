@@ -129,7 +129,7 @@
         display: flex;
         width: 85%;
         margin-left: 7.5%;
-       
+        height: 600px; 
         background:linear-gradient(45deg,rgb(250, 245, 245),rgb(250, 245, 245),rgb(250, 245, 245),rgb(226, 240, 244));
         z-index: 1;
         margin-top: -190px;
@@ -181,9 +181,9 @@
     .social{
         height: 50px;
         background-color: var(--p-col);
-        margin-top: 140px;
+        margin-top: 178px;
         width: 105%;
-        margin-left: -30px;
+        margin-left: -35px;
     }
     .icons{
         margin-left: 5%;

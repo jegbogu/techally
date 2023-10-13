@@ -60,7 +60,7 @@ const HomePage = (props) => {
 
 export default HomePage;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   await connectDB()
   const posts = await Post.find({})
   
@@ -69,15 +69,14 @@ export async function getStaticProps() {
     props: {
       posts: posts.map((post) => ({
         title: post.title,
-
         category: post.category,
         image: post.image,
-
         description: post.description,
 
         id: post._id.toString(),
       })),
-      revalidate: 1,
-    }
+       
+    },
+    
   }
 }

@@ -4,7 +4,7 @@ const BannerHeader = () => {
     return ( 
        
         <div className={classes.bannerHeader}>
-                <h1>SMART WAY OF SENDING <span>EMAILS</span></h1>
+                <h1>Smart way of sending <span>emails</span></h1>
         </div>
     
      );

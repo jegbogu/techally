@@ -6,6 +6,7 @@ import { useState } from "react";
 import Logo from "./logo";
 import Link from 'next/link';
 import Account from "../account";
+import Image from "next/image";
 
 const MainNavigation = () => {
     const { data: session, status } = useSession()
@@ -17,7 +18,12 @@ const MainNavigation = () => {
     function showProfile() {
         if (session.user.passport !== "none") {
             profile = <div className={classes.proImg}>
-                <li onClick={handleDashboard}> <img src={session.user.passport} /></li>
+                <li onClick={handleDashboard}>  <Image
+                            src={session.user.passport}
+                            alt="email"
+                            width={350}
+                            height={40}
+                        /></li>
             </div>
         } else if (session.user) {
             profile = <div className={classes.userInit}>

@@ -66,3 +66,14 @@
     background: rgba(240, 248, 255, 0);
     color:var(--s-col);
 }
+@media screen  and (max-width:780px){
+    .form{
+        margin-top: 60px;
+        border: solid 1px gray;
+        max-width: 95%;
+        margin-left: -2.5%;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: gray 1px 2px 3px;
+    }
+}

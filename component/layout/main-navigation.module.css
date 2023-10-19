@@ -362,7 +362,7 @@
         background:linear-gradient(45deg,var(--p-col),var(--b-col),var(--s-col)) ; ;
     }
     .proImg li{
-        width:50px;
+        width:55px;
          padding: 13px 8px 13px 8px;
         margin-top: -22px;
         border-radius: 50%;

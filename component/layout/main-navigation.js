@@ -21,8 +21,8 @@ const MainNavigation = () => {
                 <li onClick={handleDashboard}>  <Image
                             src={session.user.passport}
                             alt="email"
-                            width={350}
-                            height={40}
+                            width={300}
+                            height={45}
                         /></li>
             </div>
         } else if (session.user) {

@@ -55,7 +55,54 @@
     }
 }
 @media screen and (max-width:411px){
+    .skills{
+        margin-top: 500px;
+        background: url('https://res.cloudinary.com/ovaltech/image/upload/v1694777033/LOGINAPP/lfuda9nikywjekxixyva.png');
+        background-size: 1000px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .skills h3{
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+       
+    }
+    .edu h3{
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+        margin-top: 100px;
+    }
     .resume{
         margin-left: 27%;
+    }
+    .pro h3{
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+        margin-top: 100px;
+    }
+    .contact h3{
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+        margin-top: 100px;
+    }
+    .contact span{
+        color: var(--s-col);
+    }
+    .skills pan{
+        color: var(--s-col); 
+    }
+    .edu span{
+        color: var(--s-col); 
+    }
+    .pro span{
+        color: var(--s-col); 
     }
 }

@@ -151,9 +151,9 @@
     .skills{
         display: flex;
         flex-direction: column;
-        width: 85%;
-        margin-left: 7.5%;
-       padding: 20px;
+        width: 115%;
+        padding-right: 70px;
+       margin-left: -20px;
         background:linear-gradient(45deg,rgb(250, 245, 245),rgb(250, 245, 245),rgb(250, 245, 245),rgb(226, 240, 244));
         
       

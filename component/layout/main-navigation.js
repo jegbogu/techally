@@ -1,4 +1,4 @@
- import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import Hamburger from "./hamburger";
 import classes from './main-navigation.module.css'
 import { signIn, signOut, useSession } from 'next-auth/react'
@@ -18,12 +18,13 @@ const MainNavigation = () => {
     function showProfile() {
         if (session.user.passport !== "none") {
             profile = <div className={classes.proImg}>
-                <li onClick={handleDashboard}>  <Image
-                            src={session.user.passport}
-                            alt="email"
-                            width={300}
-                            height={45}
-                        /></li>
+                <li onClick={handleDashboard}>
+                    <Image
+                        src={session.user.passport}
+                        alt="passport"
+                        width={300}
+                        height={45}
+                    /></li>
             </div>
         } else if (session.user) {
             profile = <div className={classes.userInit}>
@@ -80,13 +81,13 @@ const MainNavigation = () => {
                                 <li><Link href='/services'>Services</Link></li>
                                 <li><Link href='/blog'>Blog</Link></li>
                                 <div className={classes.ps}>
-                                <div className={classes.sign}>
-                                    {session?.user ? (<li onClick={logOut}>Logout</li>) : (<li onClick={() => signIn()} >Login</li>)}
-                                </div>
-                                <div className={classes.profile}>
-                                    {profile}
+                                    <div className={classes.sign}>
+                                        {session?.user ? (<li onClick={logOut}>Logout</li>) : (<li onClick={() => signIn()} >Login</li>)}
+                                    </div>
+                                    <div className={classes.profile}>
+                                        {profile}
 
-                                </div>
+                                    </div>
                                 </div>
 
                             </ul>
@@ -95,9 +96,9 @@ const MainNavigation = () => {
 
 
                 </nav>
-              <div className={classes.contact}>
-                <p>joerallytech@gmail.com | +2348167577935</p>
-              </div>
+                <div className={classes.contact}>
+                    <p>joerallytech@gmail.com | +2348167577935</p>
+                </div>
             </div>
             <div className={classes.mobileHeader}>
                 <div className={classes.sign}>
@@ -118,13 +119,13 @@ const MainNavigation = () => {
                         <Hamburger />
                         <div className={classes.menu}>
                             <main>
-                                 <ul>
-                                 <li><Link href='/dashboard'>Dashboard</Link></li>
-                                <li><Link href='/portfolio'>My Portfolio</Link></li>
-                                <li><Link href='/contact'>Contact</Link></li>
-                                <li><Link href='/services'>Services</Link></li>
-                                <li><Link href='/blog'>Blog</Link></li>
-                                 </ul>
+                                <ul>
+                                    <li><Link href='/dashboard'>Dashboard</Link></li>
+                                    <li><Link href='/portfolio'>My Portfolio</Link></li>
+                                    <li><Link href='/contact'>Contact</Link></li>
+                                    <li><Link href='/services'>Services</Link></li>
+                                    <li><Link href='/blog'>Blog</Link></li>
+                                </ul>
                             </main>
 
                         </div>

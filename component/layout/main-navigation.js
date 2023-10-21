@@ -19,7 +19,8 @@ const MainNavigation = () => {
         if (session.user.passport !== "none") {
             profile = <div className={classes.proImg}>
                 <li onClick={handleDashboard}>
-                    <Image
+                    <img
+                   
                         src={session.user.passport}
                         alt="passport"
                         width={300}

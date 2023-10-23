@@ -38,13 +38,13 @@
 }
 .card{
     display: flex;
-    margin-left: 30%;
+    margin-left: 27%;
 }
 .card>div{
     color: var(--b-col);
     border: solid var(--s-col) 1px;
     padding: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: rgb(130, 128, 128) 1px 1px 1px;
@@ -142,7 +142,7 @@
     color: var(--s-col);
     font-size: 2em;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 15%;
+    margin-left: 10%;
     font-weight: 900;
     margin-top: 100px;
    
@@ -152,14 +152,14 @@
     color: var(--b-col);
     font-size: 1.4em;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 13%;
+    margin-left: 10%;
     
 }
 .user p{
     color: var(--b-col);
     font-size: 1em;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 13%;
+    margin-left: 10%;
     margin-top: 10px;
 }
 .dashboard h3{
@@ -172,7 +172,7 @@
 .card{
     display: flex;
     flex-direction: column;
-    margin-left: 23%;
+    margin-left: 20%;
 }
 .card>div{
     color: var(--b-col);

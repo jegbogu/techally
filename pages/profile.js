@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
 
 import ProfileImage from "../component/dashboard/profileimage";
+import DashboardMain from '../component/dashboard/dashboardMain';
 
 
 
@@ -25,6 +26,7 @@ function Profile() {
             </div>
              <div className={classes.board}>
                 <DashboardBanner/>
+                <DashboardMain/>
                 <ProfileImage/>
              </div>
            

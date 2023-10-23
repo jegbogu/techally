@@ -66,3 +66,14 @@
         background-color: var(--s-col);
         border-color:var(--p-col);
       }
+      @media screen  and (max-width:411px){
+        .form{
+            margin-top: 60px;
+            border: solid 1px gray;
+            width: 140%;
+            margin-left: -56px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: gray 1px 2px 3px;
+        }
+    }

@@ -129,7 +129,7 @@
 }
 
 }
-@media screen and (max-width:418px) {
+@media screen and (max-width:415px) {
     .banner{
     background: linear-gradient(-270deg,#001c2a9e,#011b289e);
   margin-left: -90px;
@@ -142,7 +142,7 @@
     color: var(--s-col);
     font-size: 2em;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 10%;
+    margin-left: 15%;
     font-weight: 900;
     margin-top: 100px;
    
@@ -152,14 +152,14 @@
     color: var(--b-col);
     font-size: 1.4em;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 10%;
+    margin-left: 13%;
     
 }
 .user p{
     color: var(--b-col);
     font-size: 1em;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 10%;
+    margin-left: 13%;
     margin-top: 10px;
 }
 .dashboard h3{
@@ -172,7 +172,7 @@
 .card{
     display: flex;
     flex-direction: column;
-    margin-left: 16%;
+    margin-left: 23%;
 }
 .card>div{
     color: var(--b-col);

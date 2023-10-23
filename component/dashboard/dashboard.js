@@ -5,6 +5,7 @@ import DashboardForm from "./dashboard-form";
 import { useSession } from 'next-auth/react'
 import DashboardBanner from "./dashboardBanner";
 import classes from './dashboard.module.css'
+import DashboardMain from "./dashboardMain";
 
 const Dashboard = () => {
     // const { user } = useContext(userContext)
@@ -28,7 +29,7 @@ const Dashboard = () => {
 
                 </div>
                 <div>
-
+                    <DashboardMain />
                     <DashboardFormB />
                 </div>
 

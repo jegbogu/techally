@@ -4,6 +4,7 @@ import classes from './profile.module.css'
 import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
 import DeleteAccountForm from '../component/dashboard/deleteAccountForm';
+import DashboardMain from '../component/dashboard/dashboardMain';
 
  
 
@@ -26,6 +27,7 @@ function ChangePassword() {
             </div>
              <div className={classes.board}>
                 <DashboardBanner/>
+                <DashboardMain/>
                <DeleteAccountForm/>
              </div>
            

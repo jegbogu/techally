@@ -1,6 +1,6 @@
 import { useState } from "react";
 import classes from './dashboardMain.module.css'
-import { useSession } from "next-auth/react";
+import { useSession,signOut } from "next-auth/react";
 import EditIcon from "../icons/edit";
 import ProfileIcon from "../icons/profile";
 import EarningTwoIcon from "../icons/earningTwo";
@@ -8,6 +8,7 @@ import Link from "next/link";
 import ShareIcon from "../icons/shareIcon";
 import DownlineIcon from "../icons/downline";
 import TrashIcon from "../icons/trash";
+
 function DashboardMain() {
     
     const { data: session, status } = useSession()

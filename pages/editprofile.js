@@ -4,6 +4,7 @@ import classes from './profile.module.css'
 import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
 import EditProfileForm from '../component/dashboard/editProfileForm';
+import DashboardMain from '../component/dashboard/dashboardMain';
  
 
 
@@ -25,6 +26,7 @@ function EditProfile() {
             </div>
              <div className={classes.board}>
                 <DashboardBanner/>
+                <DashboardMain/>
                <EditProfileForm/>
              </div>
            

@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
 
  import ChangePasswordForm from '../component/dashboard/changePassword';
+import DashboardMain from '../component/dashboard/dashboardMain';
 
 
 
@@ -25,6 +26,7 @@ function ChangePassword() {
             </div>
              <div className={classes.board}>
                 <DashboardBanner/>
+                <DashboardMain/>
                <ChangePasswordForm/>
              </div>
            

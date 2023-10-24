@@ -15,3 +15,10 @@
     padding: 100px;
     
 }
+@media screen and (max-width:411px) {
+    .logedOut{
+        padding: 100px;
+        margin-top: 100px;
+        
+    }
+}

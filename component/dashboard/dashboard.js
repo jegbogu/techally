@@ -51,7 +51,7 @@ const Dashboard = () => {
 
             </div>
             <div>
-
+                <DashboardMain />
                 <DashboardForm />
             </div>
 

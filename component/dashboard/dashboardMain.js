@@ -8,6 +8,7 @@ import Link from "next/link";
 import ShareIcon from "../icons/shareIcon";
 import DownlineIcon from "../icons/downline";
 import TrashIcon from "../icons/trash";
+import BankTwo from "../icons/bankTwo";
 
 function DashboardMain() {
     
@@ -80,6 +81,14 @@ function DashboardMain() {
                     </div>
                     <div className={classes.icon}>
                         <div className={classes.iconbtnOne}>
+                        <button><Link href="/allrecipients"> <BankTwo/></Link> </button> 
+                        </div>
+                        <div className={classes.btnTwo}>
+                            <button>Recipients Settings</button>
+                        </div>
+                    </div>
+                    <div className={classes.icon}>
+                        <div className={classes.iconbtnOne}>
                             <button>
                             <Link href='/deleteAccount'><TrashIcon/>  </Link>
 
@@ -90,15 +99,7 @@ function DashboardMain() {
                         </div>
                         
                     </div>
-                    <div className={classes.icon}>
-                    <div className={classes.iconbtnOne}>
-                        <button onClick={logoutFnc}><ShareIcon /> </button> 
-                        </div>
-                        <div className={classes.btnTwo}>
-                            <button>Logout</button>
-                        </div>
-                        
-                    </div>
+                     
 
 
                 </div>

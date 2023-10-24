@@ -79,14 +79,7 @@ function DashboardMain() {
                             <button>Change Password</button>
                         </div>
                     </div>
-                    <div className={classes.icon}>
-                        <div className={classes.iconbtnOne}>
-                        <button><Link href="/allrecipients"> <BankTwo/></Link> </button> 
-                        </div>
-                        <div className={classes.btnTwo}>
-                            <button>Recipients Settings</button>
-                        </div>
-                    </div>
+                    
                     <div className={classes.icon}>
                         <div className={classes.iconbtnOne}>
                             <button>
@@ -98,6 +91,14 @@ function DashboardMain() {
                             <button>Delete Account</button>
                         </div>
                         
+                    </div>
+                    <div className={classes.icon}>
+                        <div className={classes.iconbtnOne}>
+                        <button><Link href="/allrecipients"> <BankTwo/></Link> </button> 
+                        </div>
+                        <div className={classes.btnTwo}>
+                            <button>Recipients Settings</button>
+                        </div>
                     </div>
                      
 

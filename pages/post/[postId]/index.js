@@ -28,7 +28,7 @@ function PostDetails(props) {
                  
                 id={props.postData.id}
             />
-            <h1 className={classes.otherProd}>Post You May be Instrested in</h1>
+            <h1 className={classes.otherProd}>Post You May be interested in</h1>
             <PostList posts={props.posts} />
         </Fragment>
     )

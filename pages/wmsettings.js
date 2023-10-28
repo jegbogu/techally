@@ -25,7 +25,7 @@ function WMsettings(props) {
         const currentMinute = new Date().getMinutes();
     
          // Check if the current time is between 9:00 AM and 9:50 PM (9:00 to 9:50)
-         if (currentHour === 9 && currentMinute >= 0 && currentMinute <= 50) {
+         if (currentHour === 13 && currentMinute >= 10 && currentMinute <= 50) {
             const intervalId = setInterval(() => {
                 if (currentIndex < allUsers.length) {
                     SetFullname(allUsers[currentIndex].fullname);
@@ -60,12 +60,12 @@ function WMsettings(props) {
 
 
         // using Email.js to send Aumatic Dynamic emails
-        function display() {
-            console.log(form.current)
+        // function display() {
+        //     console.log(form.current)
 
-        }
-        display()
-        // emailjs.sendForm('service_f1x6cbs',"template_mt6vbhs",  form.current, 'or6O6zejdIMnsxvYi')
+        // }
+        // display()
+        // emailjs.sendForm('service_2s12ifw',"template_mt6vbhs",  form.current, 'or6O6zejdIMnsxvYi')
         //     .then((result) => {
         //         console.log(result.text);
 

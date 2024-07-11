@@ -22,7 +22,7 @@ const Portfolio = () => {
                     <h3>Sk<pan>il</pan>ls</h3>
                     <Skills />
                     <div className={classes.resume}>
-                        <Link href={"https://drive.google.com/file/d/1iZdEUEDcMxcMRPBrfzZ9s1W26-Es9ahm/view?usp=sharing"} target="_blank"><Button btn={"View Resume"} /></Link>
+                        <Link href={"https://drive.google.com/file/d/1pwaA_Hw7UofyVN8pSXO8cVV0x7_reIS6/view?usp=sharing"} target="_blank"><Button btn={"View Resume"} /></Link>
                     </div>
                 </div>
                 <div className={classes.edu}>

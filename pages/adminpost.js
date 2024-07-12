@@ -1,11 +1,11 @@
-import PostForm from "../component/post/postForm"
+// import PostForm from "../component/post/postForm"
 
  
 
 function AdminPost() {
     return (
         <div>
-           <PostForm/>
+           <h1>Post Form</h1>
         </div>
     )
 }

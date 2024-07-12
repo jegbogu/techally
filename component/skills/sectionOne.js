@@ -6,7 +6,7 @@ function Skills() {
             <div className={classes.profile}>
                 <h2>About</h2>
                 <p>
-                    I am a Vision-driven, hardworking, Self-motivated, and passionate Engineering graduate with 4+ years of experience in developing Web Application interfaces, Technically Supporting Clients, Deploying Applications, Monitoring Applications, Carrying Out CAD designs (using AutoCAD 2D/3d and Solid Works) and coaching young Web IT enthusiasts.
+                    I am a Vision-driven, hardworking, Self-motivated, and passionate Engineering graduate with 7 years of experience in developing Web Applications, Technically Supporting Clients, Deploying Applications, Monitoring Applications, Carrying Out CAD designs (using AutoCAD 2D/3d and Solid Works) and coaching young Web IT enthusiasts.
                 </p>
                 <p>
                     I love developing and partnering with industries to build global technology solutions that factor in unique demands for security, accessibility, and reusability.
@@ -32,7 +32,7 @@ function Skills() {
                 </p>
 
                 <p>
-                I have built, and managed different Applications using <b>HTML, CSS, Tailwind CSS, Bootstrap, Chakra, Matrial UI, Phython, MySQL, PHP, JavaScript, React.js, Next.js, EJS, Express.js, MongoDB, etc</b> and I have also used Content Management Systems such as WordPress; this includes use of different plugins like Elementor, WooCommerce, etc.
+                I have built, and managed different Applications using <b>HTML, CSS, Tailwind CSS, Bootstrap, Chakra, Matrial UI, Phython, MySQL, PHP, JavaScript, React.js, Next.js, EJS, Express.js, MongoDB, MSSQL etc</b> and I have also used Content Management Systems such as WordPress; this includes use of different plugins like Elementor, WooCommerce, etc.
                 </p>
                
 

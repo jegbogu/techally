@@ -32,13 +32,13 @@ function SectionOne() {
                     </div>
                     <div className={classes.info}>
                         <h3>I'M <span>EGBOGU JOSEPH</span></h3>
-                        <p>Software Engineer & Technical Support Personnel</p>
+                        <p>Software Developer & Technical Consultant</p>
                     </div>
                     <div className={classes.secondly}>
                         <p><span>Email</span>  jegbogu@gmail.com</p>
                         <p><span>Phone</span>  +2348167577935</p>
                         <p><span>Address</span>  Port Harcourt, Rivers State Nigeria</p>
-                        <p><span>Website</span>  joerally.com</p>
+                        <p><span>Website</span>  https://joerally.vercel.app</p>
                         <div className={classes.social}>
                             <div className={classes.icons}>
 

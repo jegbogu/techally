@@ -55,7 +55,7 @@ function SectionOne() {
                                     <Link href='https://www.youtube.com/channel/UCgarg3Tr-WtAhKCesxJonJA' target='_blank'><YoutubeIcon /></Link>
                                 </div>
                                 <div>
-                                    <Link href='https://drive.google.com/file/d/1iZdEUEDcMxcMRPBrfzZ9s1W26-Es9ahm/view' target='_blank'><ResumeIcon /></Link>
+                                    <Link href='https://drive.google.com/file/d/1pwaA_Hw7UofyVN8pSXO8cVV0x7_reIS6/view' target='_blank'><ResumeIcon /></Link>
                                 </div>
 
                             </div>

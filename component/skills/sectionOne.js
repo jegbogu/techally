@@ -13,7 +13,7 @@ function Skills() {
                 </p>
 
                 <p>
-                    I have worked with different companies as a <b>Full stack Web developer, IT Consultant/Support,Backend Developer, Head Operations, Cloud Developer, Front End Web Developer, Lead Developer,</b> etc.
+                    Currently i work as Software Developer/Technical Consultant for NCG Africa. I have worked with different companies as a <b>Full stack Web developer, IT Consultant/Support,Backend Developer, Head Operations, Cloud Developer, Front End Web Developer, Lead Developer,</b> etc.
                 </p>
 
                 <p>

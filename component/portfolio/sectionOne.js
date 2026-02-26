@@ -36,8 +36,8 @@ function SectionOne() {
                     </div>
                     <div className={classes.secondly}>
                         <p><span>Email</span>  jegbogu@gmail.com</p>
-                        <p><span>Phone</span>  +2348167577935</p>
-                        <p><span>Address</span>  Port Harcourt, Rivers State Nigeria</p>
+                        <p><span>Phone</span>  +27732580020</p>
+                        <p><span>Address</span>Athlone Cape Town South Africa</p>
                         <p><span>Website</span>  https://joerally.vercel.app</p>
                         <div className={classes.social}>
                             <div className={classes.icons}>
@@ -55,7 +55,7 @@ function SectionOne() {
                                     <Link href='https://www.youtube.com/channel/UCgarg3Tr-WtAhKCesxJonJA' target='_blank'><YoutubeIcon /></Link>
                                 </div>
                                 <div>
-                                    <Link href='https://drive.google.com/file/d/1pwaA_Hw7UofyVN8pSXO8cVV0x7_reIS6/view' target='_blank'><ResumeIcon /></Link>
+                                    <Link href='https://drive.google.com/file/d/1pqbF5EXq9T-pwHGM3zlzH4uO-ovmhYiO/view?usp=sharing' target='_blank'><ResumeIcon /></Link>
                                 </div>
 
                             </div>

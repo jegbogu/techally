@@ -6,7 +6,7 @@ const Logo = () => {
         <div className={classes.logo}>
             <Image
                 src={logoTwo}
-                alt="email"
+                alt="logo"
                 width={150}
                 
             />

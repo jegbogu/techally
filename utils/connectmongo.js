@@ -1,5 +1,6 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
+const errorCollector = require('./errorCollector')
 
 const fs = require('fs')
 const today = new Date();
@@ -30,8 +31,7 @@ const connectDB = async ()=>{
         console.log('mongoDB is connected ---- Successfully')
     } catch (error) {
         console.log(error)
-        const log = `{logtimeStamp: ${formattedDate}, application:joerally, ${error}}`
-        fs.writeFileSync('error.log',log)
+        errorCollector(error);
         process.exit(1)
     }
     

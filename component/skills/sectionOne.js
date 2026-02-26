@@ -6,7 +6,12 @@ function Skills() {
             <div className={classes.profile}>
                 <h2>About</h2>
                 <p>
-                    I am a Vision-driven, hardworking, Self-motivated, and passionate Engineering graduate with 7 years of experience in developing Web Applications, Technically Supporting Clients, Deploying Applications, Monitoring Applications, Carrying Out CAD designs (using AutoCAD 2D/3d and Solid Works) and coaching young Web IT enthusiasts.
+ With 7 years of experience as a software developer, I specialize in creating dynamic websites using a robust stack that includes HTML5, CSS3, JavaScript, React.js, Next.js, Node.js, MongoDB, SQL databases, and WordPress. My expertise extends to implementing effective SEO strategies that enhance online visibility and drive traffic.
+
+I am proficient in Agile methodologies, enabling me to collaborate seamlessly within teams to deliver high-quality, iterative software solutions. My strong background in data structures and algorithms ensures that I design efficient and scalable code.
+
+In addition, I have extensive experience in DevOps practices, allowing me to proficiently deploy and maintain applications across cloud environments while optimizing CI/CD pipelines. Versatile and skilled, I am equipped to tackle complex challenges, enhance online presence, and drive business growth through impactful software solutions
+
                 </p>
                 <p>
                     I love developing and partnering with industries to build global technology solutions that factor in unique demands for security, accessibility, and reusability.
